@@ -10,3 +10,20 @@ header{
     justify-content:space-around;
     gap: 1rem;
 }
+
+.overview{
+    display: flex;
+    justify-content: center;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10rem;
+}
+
+.item{
+    height: 10rem;
+    width: 10rem;
+    background-color: aliceblue;
+}
