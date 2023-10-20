@@ -8,6 +8,7 @@ p{
     font-family: Roboto;
     padding: 0;
     margin: 0;
+    font-weight: 300;
 }
 
 header{
@@ -70,7 +71,6 @@ header img{
     height: 15rem;
     width: 20rem;
     background-color: rgb(20, 108, 185);
-    border-radius: 10px;
 }
 
 .item-title{
@@ -84,6 +84,7 @@ header img{
     gap: 2rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+    font-size: 1rem;
 }
 
 .item div img{
