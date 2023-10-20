@@ -16,7 +16,7 @@ header{
     justify-content: space-between;
     align-items: center;
     background-color: #041E42;
-    height: 5rem;
+    height: 10vh;
     padding-left: 5%;
     padding-right: 5%;
     color: rgb(230, 243, 255);
@@ -54,51 +54,40 @@ header img{
 
 .overview{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    height: 90vh;
 }
 .grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 5rem;
+    gap: 3rem;
 }
 
 .item{
     height: 15rem;
     width: 20rem;
     background-color: rgb(20, 108, 185);
+    border-radius: 10px;
 }
 
 .item-title{
+    background-color: antiquewhite;
+}
+
+.item div{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    border-bottom: solid;
-    border-bottom-width: 1px;
-    border-bottom-color: black;
+    gap: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
-.item-title img{
+.item div img{
     height: 2rem;
     width: 2rem;
-}
-
-.item-overview{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.item-icon-detail{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    gap: 1rem;
-}
-
-.item-icon-detail img{
-    height: 2rem;
-    width: 2rem;
+    margin-left: 1rem;
 }
