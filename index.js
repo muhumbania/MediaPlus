@@ -1,11 +1,20 @@
-const elements = document.querySelectorAll('.menu-item img');
-
+const headerButtons = document.querySelectorAll('.menu-item img');
 let state = 2
 
-const buffer = ['0', '0'];
+const overviewItems = document.querySelectorAll('.item');
 
-elements.forEach(element => {
-    element.addEventListener('click', InverseIcon);
+overviewItems.forEach(overviewItem => {
+    overviewItem.addEventListener('mouseenter', function(){
+        this.style.transform = "scale(1.1)";
+    });
+    overviewItem.addEventListener('mouseleave', function(){
+        this.style.transform = "scale(1)";
+    });
+});
+
+const buffer = ['0', '0'];
+headerButtons.forEach(headerButton => {
+    headerButton.addEventListener('click', InverseIcon);
 });
 
 function InverseIcon(){
@@ -31,6 +40,14 @@ function InverseIcon(){
     }else{
         //nothing
     }
+}
+
+function zoomIn(overviewItem){
+    overviewItem.style.transform = "scale(1.2)";
+}
+
+function zoomOut(overviewItem){
+    overviewItem.style.transform = "scale(1)";
 }
 
 
