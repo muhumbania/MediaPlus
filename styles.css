@@ -113,7 +113,7 @@ header img{
 
 .new-post{
     background-color: aqua;
-    width: 50rem;
+    width: 40rem;
     height: 30rem;
 }
 
@@ -126,6 +126,19 @@ header img{
 }
 
 .new-post-title img{
+    height: 2rem;
+    width: 2rem;
+}
+
+.accounts{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.accounts img{
     height: 2rem;
     width: 2rem;
 }
