@@ -94,7 +94,7 @@ header img{
     margin-left: 1rem;
 }
 
-.new-post{
+.new-post-button{
     position: absolute;
     bottom: 2rem;
     right: 2rem;
@@ -102,4 +102,30 @@ header img{
     background-color: #041E42;
     color: white;
     border: none;
+}
+
+.post{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-post{
+    background-color: aqua;
+    width: 50rem;
+    height: 30rem;
+}
+
+.new-post-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    background-color: antiquewhite;
+}
+
+.new-post-title img{
+    height: 2rem;
+    width: 2rem;
 }
