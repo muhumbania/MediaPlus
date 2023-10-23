@@ -142,3 +142,8 @@ header img{
     height: 2rem;
     width: 2rem;
 }
+
+.post-content{
+    display: flex;
+    justify-content: center;
+}
