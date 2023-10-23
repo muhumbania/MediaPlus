@@ -132,10 +132,12 @@ header img{
 
 .accounts{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
 .accounts img{
@@ -146,4 +148,18 @@ header img{
 .post-content{
     display: flex;
     justify-content: center;
+}
+
+.post-add{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-top: 1rem;
+}
+
+.post-add img{
+    height: 2rem;
+    width: 2rem;
 }
