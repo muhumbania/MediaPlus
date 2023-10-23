@@ -2,6 +2,7 @@ body{
     padding: 0;
     margin: 0;
     background-color: #E0FFFF;
+    position: relative;
 }
 
 p{
@@ -91,4 +92,14 @@ header img{
     height: 2rem;
     width: 2rem;
     margin-left: 1rem;
+}
+
+.new-post{
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    padding: 0.8rem 1rem;
+    background-color: #041E42;
+    color: white;
+    border: none;
 }

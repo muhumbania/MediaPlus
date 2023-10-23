@@ -8,23 +8,18 @@
     <script defer src="https://pyscript.net/latest/pyscript.js"></script>
     <py-env>
         - numpy
-        - matplotlib
         - paths:
             - ./show.py
     </py-env>
+
 </head>
 <body>
     <div id="follower-growth">
     </div>
     <py-script output="follower-growth">
-        import matplotlib.pyplot as plt
-        from show import make
-
-        x, y = make(1000)
-        fig, ax = plt.subplots()
-        ax.scatter(x, y)
-        fig
-
+        
+        from show import m
+        m()
     </py-script>
     <div class="engagement-metrics">
         Engagement Metrics
