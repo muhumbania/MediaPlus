@@ -197,3 +197,24 @@ header img{
     height: 3rem;
     width: 3rem;
 }
+
+.accounts-log{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.accounts-log-item{
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.accounts-log-item img{
+    width: 2rem;
+    height: 2rem;
+}
