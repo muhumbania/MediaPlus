@@ -173,3 +173,19 @@ header img{
     padding-bottom: 0.5rem;
     background-color: #041E42;
 }
+
+.account{
+    display: flex;
+    width: 25rem;
+    height: 80vh;
+    background-color: aliceblue;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.username img{
+    height: 3rem;
+    width: 3rem;
+}
