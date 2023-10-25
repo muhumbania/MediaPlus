@@ -1,5 +1,10 @@
 const headerButtons = document.querySelectorAll('.menu-item img');
-let state = 2
+let state = 2;
+
+document.getElementById('4').addEventListener('click', function(){
+    document.querySelector('.account').classList.toggle('hidden');
+});
+
 
 const overviewItems = document.querySelectorAll('.item');
 
@@ -40,14 +45,8 @@ function InverseIcon(){
     }else{
         //nothing
     }
+
 }
 
-function zoomIn(overviewItem){
-    overviewItem.style.transform = "scale(1.2)";
-}
-
-function zoomOut(overviewItem){
-    overviewItem.style.transform = "scale(1)";
-}
 
 
