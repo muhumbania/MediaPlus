@@ -5,6 +5,9 @@ document.getElementById('4').addEventListener('click', function(){
     document.querySelector('.account').classList.toggle('hidden');
 });
 
+document.querySelector('.new-post-button').addEventListener('click', function(){
+    document.querySelector('.post').classList.toggle('hidden');
+});
 
 const overviewItems = document.querySelectorAll('.item');
 

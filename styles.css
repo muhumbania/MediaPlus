@@ -60,6 +60,7 @@ header img{
     justify-content: center;
     align-items: center;
     height: 90vh;
+    z-index: -9;
 }
 .grid{
     display: grid;
@@ -113,6 +114,7 @@ header img{
     position: absolute;
     top: 10vh;
     left: 0;
+    z-index: -999;
 }
 
 .new-post{
