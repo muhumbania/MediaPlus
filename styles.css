@@ -181,13 +181,16 @@ header img{
 .account{
     display: flex;
     flex-direction: column;
-    width: 25rem;
+    width: 20rem;
     height: 80vh;
     background-color: aliceblue;
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    position: absolute;
+    top: 10vh;
+    right: 1rem;
 }
 
 .username{
