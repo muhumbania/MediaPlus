@@ -3,3 +3,13 @@
     height: 90vh;
     background-color: antiquewhite;
 }
+
+.notif-header{
+    height: 5rem;
+    background-color: aquamarine;
+    padding-left: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+}
