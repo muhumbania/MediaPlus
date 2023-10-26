@@ -192,6 +192,7 @@ header img{
     position: absolute;
     top: 10vh;
     right: 1rem;
+    z-index: 2;
 }
 
 .username{
