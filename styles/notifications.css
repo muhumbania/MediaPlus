@@ -1,3 +1,6 @@
+p{
+    margin: 0;
+}
 .notifications{
     width: 40vw;
     height: 90vh;
@@ -5,13 +8,14 @@
 }
 
 .notif-header{
-    height: 5rem;
+    height: 4rem;
     background-color: aquamarine;
     padding-left: 1rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .notif-header button{
@@ -20,4 +24,27 @@
     border: solid;
     border-width: 1px;
     border-radius: 2rem;
+}
+
+.notif-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    gap: 1rem;
+}
+
+.notif-item img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 3rem;
+}
+
+.notif-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
