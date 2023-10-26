@@ -13,3 +13,11 @@
     align-items: center;
     gap: 0.5rem;
 }
+
+.notif-header button{
+    padding: 0.5rem 1rem;
+    background-color: aquamarine;
+    border: solid;
+    border-width: 1px;
+    border-radius: 2rem;
+}
