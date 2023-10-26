@@ -30,9 +30,10 @@ p{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 1rem 1rem;
+    margin-bottom: 0.5rem;
     gap: 1rem;
+    background-color: azure;
 }
 
 .notif-item img{
