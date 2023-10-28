@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Sign up</title>
+    <title>Sign up</title>
 </head>
 <body>
-    <div class="login">
-        <p>Sign up</p>
-        <div class="login-field">
-            <p>Nam</p>
-            <input type="text" placeholder="username">
-        </div>
-        <div class="login-field">
-            <p>Password</p>
-            <input type="password" placeholder="password">
-        </div>
-    </div>
+    <h1>Sign up</h1>
+    <form action="" method="post">
+        <label for="name">Username:</label>
+        <input type="text" id="username" name="username" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <input type="submit" value="Sign up">
+    </form>
 </body>
 </html>
