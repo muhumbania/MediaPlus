@@ -15,8 +15,16 @@
         // initialize your calendar, once the page's DOM is ready
             $(document).ready(function() {
                 $('#calendar').evoCalendar();
-                // $('#calendar').evoCalendar('addEvent', '2023-10-31', 'Halloween', 'holiday');
-                // console.log(('#calendar'));
+                $("#calendar").evoCalendar('addCalendarEvent', [
+                    {
+                    id: '09nk7Ts',
+                    name: "My Birthday",
+                    date: "October/31/2023",
+                    type: "birthday",
+                    everyYear: true
+                    }
+                ]);
+                $('#calendar').evoCalendar('refresh');
             });
         </script>
 
