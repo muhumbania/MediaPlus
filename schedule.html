@@ -1,23 +1,24 @@
-<!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>FullCalendar Integration</title>
-    <link href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css' rel='stylesheet' />
-    <!-- Add the evo-calendar.css for styling -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/evo-calendar@1.1.2/evo-calendar/css/evo-calendar.min.css"/>
-</head>
-<body>
-    <div id='calendar'></div>
+    <head>
+        <title>My Evo Calendar</title>
+        <link rel="stylesheet" type="text/css" href="styles/evo-calendar.css"/>
+        <!-- <link rel="stylesheet" type="text/css" href="css/evo-calendar.midnight-blue.css"/> -->
+    </head>
+    <body>
 
-    <script>
-        $("#calendar").evoCalendar();
-    </script>
+        <div id="calendar"></div>
 
-    <!-- Add jQuery library (required) -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="./evo-calendar.js"></script>
 
-    <!-- Add the evo-calendar.js for.. obviously, functionality! -->
-    <script src="https://cdn.jsdelivr.net/npm/evo-calendar@1.1.2/evo-calendar/js/evo-calendar.min.js"></script>
-</body>
+        <script>
+        // initialize your calendar, once the page's DOM is ready
+            $(document).ready(function() {
+                $('#calendar').evoCalendar();
+                // $('#calendar').evoCalendar('addEvent', '2023-10-31', 'Halloween', 'holiday');
+                // console.log(('#calendar'));
+            });
+        </script>
+
+    </body>
 </html>
