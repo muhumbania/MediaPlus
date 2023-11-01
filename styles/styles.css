@@ -231,3 +231,7 @@ header img{
 .hidden{
     display: none;
 }
+
+.footer{
+    text-align: center;
+}
