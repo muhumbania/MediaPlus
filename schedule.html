@@ -22,9 +22,18 @@
                     date: "October/31/2023",
                     type: "birthday",
                     everyYear: true
+                    },
+                    {
+                    id: '09nk7Ts',
+                    name: "Facebook Post",
+                    date: "October/31/2023",
+                    type: "birthday",
+                    everyYear: true,
+                    startDate: '10:00'
                     }
                 ]);
-                $('#calendar').evoCalendar('refresh');
+                // $('#calendar').evoCalendar('refresh');
+                $('#calendar').evoCalendar({view : 'month'});
             });
         </script>
 
