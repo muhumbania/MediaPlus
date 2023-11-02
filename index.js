@@ -1,20 +1,22 @@
 const headerButtons = document.querySelectorAll('.menu-item img');
 let state = 2;
-let showHide = 0;
+let showHide = false;
 
+const accountDiv = document.querySelector('.account');
+const postDiv = document.querySelector('.post');
+showOrHide(showHide, accountDiv);
+showOrHide(showHide, postDiv);
 
 document.getElementById('4').addEventListener('click', function(){
-    const element = document.querySelector('.account');
     showHide = !showHide;
-    showOrHide(showHide, element);
+    showOrHide(showHide, accountDiv);
 });
 
 
 
 document.querySelector('.new-post-button').addEventListener('click', function(){
-    const element = document.querySelector('.post');
     showHide = !showHide;
-    showOrHide(showHide, element);
+    showOrHide(showHide, postDiv);
 });
 
 const overviewItems = document.querySelectorAll('.item');
