@@ -3,19 +3,18 @@ let state = 2;
 let showHide = 0;
 
 
-showOrHide(showHide, document.querySelector('.account'));
-
 document.getElementById('4').addEventListener('click', function(){
     const element = document.querySelector('.account');
     showHide = !showHide;
-    console.log(showHide);
     showOrHide(showHide, element);
 });
 
 
 
 document.querySelector('.new-post-button').addEventListener('click', function(){
-    document.querySelector('.post').classList.toggle('hidden');
+    const element = document.querySelector('.post');
+    showHide = !showHide;
+    showOrHide(showHide, element);
 });
 
 const overviewItems = document.querySelectorAll('.item');
