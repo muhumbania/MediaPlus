@@ -1,9 +1,18 @@
 const headerButtons = document.querySelectorAll('.menu-item img');
 let state = 2;
+let showHide = 0;
+
+
+showOrHide(showHide, document.querySelector('.account'));
 
 document.getElementById('4').addEventListener('click', function(){
-    document.querySelector('.account').classList.toggle('hidden');
+    const element = document.querySelector('.account');
+    showHide = !showHide;
+    console.log(showHide);
+    showOrHide(showHide, element);
 });
+
+
 
 document.querySelector('.new-post-button').addEventListener('click', function(){
     document.querySelector('.post').classList.toggle('hidden');
@@ -47,6 +56,15 @@ function InverseIcon(){
         lastClicked.setAttribute('src', lastSrc + '2.png');
     }else{
         //nothing
+    }
+}
+
+function showOrHide(showHide, element){
+
+    if(showHide === false){
+        element.classList.add('hidden');
+    }else{
+        element.classList.remove('hidden');
     }
 
 }
