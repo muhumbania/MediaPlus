@@ -49,3 +49,59 @@ p{
     align-items: center;
     gap: 1rem;
 }
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #E0FFFF;
+    position: relative;
+}
+
+p{
+    font-family: Roboto;
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #041E42;
+    height: 10vh;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: rgb(230, 243, 255);
+    font-weight: 250;
+    font-family: Roboto;
+    font-size: 0.85rem;
+
+}
+
+.header-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    gap: 2rem;
+}
+
+.menu-item{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    width: 6rem;
+}
+
+.menu-item img{
+    height: 1.7rem;
+    width: 1.7rem;
+}
+
+header img{
+    height: 2.7rem;
+    width: 2.7rem;
+}
