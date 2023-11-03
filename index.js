@@ -12,8 +12,6 @@ document.getElementById('4').addEventListener('click', function(){
     showOrHide(showHide, accountDiv);
 });
 
-
-
 document.querySelector('.new-post-button').addEventListener('click', function(){
     showHide = !showHide;
     showOrHide(showHide, postDiv);
