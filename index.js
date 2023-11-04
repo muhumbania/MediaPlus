@@ -1,4 +1,4 @@
-const headerButtons = document.querySelectorAll('.menu-item img');
+const headerButtons = document.querySelectorAll('.header-icon');
 let state = 2;
 let showHide = false;
 
