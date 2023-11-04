@@ -1,24 +1,38 @@
+//header button list, to control the active icon
 const headerButtons = document.querySelectorAll('.header-icon');
 let state = 2;
+
+//boolean variable, for show hide div, accountDiv and postDiv
 let showHide = false;
 
+window.addEventListener('click', function(){
+    showOrHide(false, accountDiv);
+    showOrHide(false, postDiv);
+});
+
+//set the default display to none for account and post div
 const accountDiv = document.querySelector('.account');
 const postDiv = document.querySelector('.post');
 showOrHide(showHide, accountDiv);
 showOrHide(showHide, postDiv);
 
-document.getElementById('4').addEventListener('click', function(){
+//display the post or account div, if one gets clicked
+document.getElementById('4').addEventListener('click', function(event){
+    event.stopPropagation();
     showHide = !showHide;
-    showOrHide(showHide, accountDiv);
+    showOrHide(showHide, accountDiv); 
 });
 
-document.querySelector('.new-post-button').addEventListener('click', function(){
+document.querySelector('.new-post-button').addEventListener('click', function(event){
+    event.stopPropagation();
     showHide = !showHide;
     showOrHide(showHide, postDiv);
 });
 
-const overviewItems = document.querySelectorAll('.item');
+console.log(showHide);
 
+//add a zoom animation for overview item, if they get over hovered
+const overviewItems = document.querySelectorAll('.item');
 overviewItems.forEach(overviewItem => {
     overviewItem.addEventListener('mouseenter', function(){
         this.style.transform = "scale(1.1)";
@@ -28,11 +42,14 @@ overviewItems.forEach(overviewItem => {
     });
 });
 
+//add the event listener to the different header buttons
 const buffer = ['0', '0'];
 headerButtons.forEach(headerButton => {
     headerButton.addEventListener('click', InverseIcon);
 });
 
+
+//implemented the inversion function
 function InverseIcon(){
 
     //store the preveous button clicked 
@@ -58,6 +75,7 @@ function InverseIcon(){
     }
 }
 
+//impleted the show or hide function for the account and post div
 function showOrHide(showHide, element){
 
     if(showHide === false){
