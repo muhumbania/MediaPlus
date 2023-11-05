@@ -185,7 +185,7 @@ header img{
     width: 20rem;
     height: 80vh;
     background-color: aliceblue;
-    padding-left: 2rem;
+    padding-left: 1rem;
     padding-right: 2rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -220,7 +220,12 @@ header img{
     justify-content: flex-start;
     gap: 2rem;
     align-items: center;
-    padding-top: 1rem;
+    padding: 0.5rem 0.5rem;
+    width: 20rem;
+}
+
+.accounts-log-item:hover{
+    background-color: #E0FFFF;
 }
 
 .accounts-log-item img{
