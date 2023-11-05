@@ -42,6 +42,11 @@ header{
     align-items: center;
     gap: 0.5rem;
     width: 6rem;
+    padding: 0.2rem 0.2rem;
+}
+
+.menu-item:hover{
+    background-color: #808080;
 }
 
 .menu-item img{
