@@ -47,6 +47,7 @@ header{
 
 .menu-item:hover{
     background-color: #808080;
+    cursor: pointer;
 }
 
 .menu-item img{
