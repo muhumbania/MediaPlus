@@ -229,9 +229,9 @@ header img{
     cursor: pointer;
 }
 
-.accounts-log-item img{
-    width: 2rem;
-    height: 2rem;
+.icon-account-div{
+    width: 1.8rem;
+    height: 1.8rem;
 }
 
 .hidden{
