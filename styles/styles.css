@@ -226,6 +226,7 @@ header img{
 
 .accounts-log-item:hover{
     background-color: #E0FFFF;
+    cursor: pointer;
 }
 
 .accounts-log-item img{
