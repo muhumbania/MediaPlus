@@ -99,6 +99,11 @@ header img{
     width: 2rem;
     margin-left: 1rem;
 }
+.icon-overview-stat{
+    height: 2rem;
+    width: 2rem;
+    margin-left: 1rem;
+}
 
 .new-post-button{
     position: absolute;
