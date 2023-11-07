@@ -26,6 +26,11 @@ p{
     border-radius: 2rem;
 }
 
+.notif-header button:hover{
+    cursor: pointer;
+    background-color: #E0FFFF;
+}
+
 .notif-item{
     display: flex;
     justify-content: space-between;
