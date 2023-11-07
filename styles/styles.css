@@ -215,6 +215,12 @@ header img{
     justify-content: flex-start;
     gap: 2rem;
     align-items: center;
+    width: 20rem;
+}
+
+.username:hover{
+    background-color: #E0FFFF;
+    cursor: pointer;
 }
 
 .username img{
