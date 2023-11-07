@@ -116,6 +116,10 @@ header img{
     z-index: 1;
 }
 
+.new-post-button:hover{
+    cursor: pointer;
+}
+
 .post{
     display: flex;
     height: 90vh;
