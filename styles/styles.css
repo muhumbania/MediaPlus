@@ -43,6 +43,9 @@ header{
     gap: 0.5rem;
     width: 6rem;
     padding: 0.2rem 0.2rem;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: white;
 }
 
 .menu-item:hover{
