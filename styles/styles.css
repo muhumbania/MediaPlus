@@ -48,6 +48,9 @@ header{
 }
 
 .account-holder{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     flex: 1;
     background-color: blueviolet;
     height: 10vh;
