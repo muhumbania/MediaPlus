@@ -32,7 +32,6 @@ header{
 .logo-holder{
     display: flex;
     flex: 1;
-    background-color: coral;
     height: 10vh;
     justify-content: flex-start;
     align-items: center;
@@ -43,7 +42,6 @@ header{
     justify-content: space-around;
     align-items: flex-end;
     flex: 2;
-    background-color: chartreuse;
     height: 10vh;
 }
 
@@ -52,7 +50,6 @@ header{
     justify-content: flex-end;
     align-items: center;
     flex: 1;
-    background-color: blueviolet;
     height: 10vh;
 }
 
@@ -71,6 +68,11 @@ header{
     gap: 0.5rem;
     width: 6rem;
     padding: 0.2rem 0.2rem;
+    padding-bottom: 0.3rem;
+    /* background-color: darkgreen; */
+}
+
+.border-bottom{
     border-bottom-style: solid;
     border-bottom-width: 2px;
     border-bottom-color: white;

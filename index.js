@@ -62,6 +62,7 @@ function InverseIcon(){
     
     //Change the button clicked
     this.setAttribute('src', currentSrc +  `${state}.png`);
+    this.classList.add('border-bottom');
 
     //retrieve the last button clicked
     const lastClicked = document.getElementById(buffer[0]);
@@ -70,6 +71,7 @@ function InverseIcon(){
     //Reset the preveous button only if it's different from the current one 
     if( lastSrc !== currentSrc){
         lastClicked.setAttribute('src', lastSrc + '2.png');
+        lastClicked.classList.remove('border-bottom');
     }else{
         //nothing
     }
