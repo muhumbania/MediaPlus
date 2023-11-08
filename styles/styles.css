@@ -12,6 +12,7 @@ p{
     font-weight: 300;
 }
 
+
 header{
     display: flex;
     flex-direction: row;
@@ -26,6 +27,27 @@ header{
     font-family: Roboto;
     font-size: 0.85rem;
 
+}
+
+.logo-holder{
+    display: flex;
+    flex: 1;
+    background-color: coral;
+    height: 10vh;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.menu-holder{
+    flex: 2;
+    background-color: chartreuse;
+    height: 10vh;
+}
+
+.account-holder{
+    flex: 1;
+    background-color: blueviolet;
+    height: 10vh;
 }
 
 .header-menu{
