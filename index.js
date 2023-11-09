@@ -33,6 +33,10 @@ document.querySelector('.account').addEventListener('click', function(event){
     event.stopPropagation();
 });
 
+document.querySelector('.post').addEventListener('click', function(event){
+    event.stopPropagation();
+});
+
 //add a zoom animation for overview item, if they get over hovered
 const overviewItems = document.querySelectorAll('.item');
 overviewItems.forEach(overviewItem => {
