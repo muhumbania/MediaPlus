@@ -29,7 +29,9 @@ document.querySelector('.new-post-button').addEventListener('click', function(ev
     showOrHide(showHide, postDiv);
 });
 
-console.log(showHide);
+document.querySelector('.account').addEventListener('click', function(event){
+    event.stopPropagation();
+});
 
 //add a zoom animation for overview item, if they get over hovered
 const overviewItems = document.querySelectorAll('.item');
@@ -62,6 +64,7 @@ function InverseIcon(){
     
     //Change the button clicked
     this.setAttribute('src', currentSrc +  `${state}.png`);
+    // console.log(this.id + this.id);
     this.classList.add('border-bottom');
 
     //retrieve the last button clicked
