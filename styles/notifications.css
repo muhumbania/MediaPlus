@@ -43,6 +43,7 @@ p{
 
 .notif-item:hover{
     cursor: pointer;
+    background-color: beige;
 }
 
 .notif-item img{
