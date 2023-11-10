@@ -41,6 +41,10 @@ p{
     background-color: azure;
 }
 
+.notif-item:hover{
+    cursor: pointer;
+}
+
 .notif-item img{
     width: 3rem;
     height: 3rem;
