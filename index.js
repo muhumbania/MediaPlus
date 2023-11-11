@@ -65,11 +65,11 @@ function InverseIcon(){
 
     //store the src attribute of the current button
     let currentSrc = this.src.substring(21, this.src.length - 5);
-    
+    let itemClicked = document.getElementById(this.id + this.id);
     //Change the button clicked
     this.setAttribute('src', currentSrc +  `${state}.png`);
-    // console.log(this.id + this.id);
-    this.classList.add('border-bottom');
+    itemClicked.classList.add('border-bottom');
+    // this.classList.add('border-bottom');
 
     //retrieve the last button clicked
     const lastClicked = document.getElementById(buffer[0]);
@@ -77,8 +77,8 @@ function InverseIcon(){
     
     //Reset the preveous button only if it's different from the current one 
     if( lastSrc !== currentSrc){
+        itemClicked.classList.remove('border-bottom');
         lastClicked.setAttribute('src', lastSrc + '2.png');
-        lastClicked.classList.remove('border-bottom');
     }else{
         //nothing
     }

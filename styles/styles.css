@@ -151,6 +151,7 @@ header img{
 
 .new-post-button:hover{
     cursor: pointer;
+    opacity: 0.9;
 }
 
 .post{
