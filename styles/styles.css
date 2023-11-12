@@ -115,6 +115,7 @@ header img{
 
 .item-title{
     background-color: antiquewhite;
+    padding-left: 1rem;
 }
 
 .item div{
@@ -130,7 +131,7 @@ header img{
 .icon-overview-title{
     height: 2rem;
     width: 2rem;
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
 }
 .icon-overview-stat{
     height: 1.5rem;
@@ -311,6 +312,20 @@ header img{
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+
+.dashboard-item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    width: 11rem;
+}
+
+.dashboard-item:hover{
+    background-color: #dadada;
+    cursor: pointer;
+
 }
 
 .footer{
