@@ -300,6 +300,8 @@ header img{
     left: 0;
     width: 20vw;
     background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer{
