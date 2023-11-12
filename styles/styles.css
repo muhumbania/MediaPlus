@@ -293,6 +293,15 @@ header img{
     display: none;
 }
 
+.dashboard{
+    position: absolute;
+    top: 10vh;
+    bottom: 0;
+    left: 0;
+    width: 20vw;
+    background-color: aquamarine;
+}
+
 .footer{
     text-align: center;
 }
