@@ -329,6 +329,12 @@ header img{
 
 }
 
+.dashboards{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
 .footer{
     /* text-align: center; */
 }
