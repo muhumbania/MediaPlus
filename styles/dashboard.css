@@ -1,0 +1,21 @@
+body{
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+.dashboard-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard-title{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.dashboard-profile{
+    height: 2rem;
+    width: 2rem;
+}
