@@ -23,4 +23,29 @@ body{
 .dashboard{
     height: 90vh;
     background-color: aqua;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.audience-growth{
+    background-color: beige;
+    grid-column: span 1.5;
+}
+
+.engagement-rate{
+    background-color: blue;
+    
+}
+
+.reach{
+    background-color: blueviolet;
+}
+
+.audience-demo{
+    background-color: brown
+}
+
+.content-type{
+    background-color: cadetblue;
 }
