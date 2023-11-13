@@ -19,3 +19,8 @@ body{
     height: 2rem;
     width: 2rem;
 }
+
+.dashboard{
+    height: 90vh;
+    background-color: aqua;
+}
