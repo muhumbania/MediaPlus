@@ -63,6 +63,11 @@ body{
 }
 
 
+.graph-followers{
+    background-color: rgb(111, 180, 19);
+    grid-row: 1/3;
+} 
+
 .engagement-rate{
     background-color: blue;
     grid-column: 3/5;
