@@ -66,6 +66,16 @@ body{
     align-items: center;
 }
 
+.graph-followers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.graph-followers img{
+    height: 14rem;
+}
+
 
 .graph-followers{
     background-color: rgb(111, 180, 19);
