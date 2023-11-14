@@ -41,6 +41,20 @@ body{
     justify-content: space-between;
 }
 
+.audience-growth-metrics{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: cornflowerblue;
+    height: 14rem;
+}
+
+.total-followers{
+    background-color: rgb(108, 108, 204);
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
 .engagement-rate{
     background-color: blue;
     grid-column: 3/5;
