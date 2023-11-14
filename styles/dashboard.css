@@ -47,6 +47,7 @@ body{
     grid-template-rows: 1fr 1fr;
     background-color: cornflowerblue;
     height: 14rem;
+    ga
 }
 
 .total-followers{
@@ -54,6 +55,13 @@ body{
     grid-column: 1/2;
     grid-row: 1/2;
 }
+
+.new-followers{
+    background-color: coral;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
 
 .engagement-rate{
     background-color: blue;
