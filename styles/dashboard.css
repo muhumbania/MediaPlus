@@ -3,6 +3,10 @@ body{
     padding-left: 2rem;
 }
 
+p{
+    margin: 0;
+}
+
 .dashboard-header{
     display: flex;
     justify-content: space-between;
@@ -72,7 +76,7 @@ body{
     align-items: center;
 }
 
-.graph-followers img{
+.graph-followers img, .engagement-graph img{
     height: 14rem;
 }
 
@@ -85,6 +89,26 @@ body{
 .engagement-rate{
     background-color: blue;
     grid-column: 3/5;
+}
+
+.engagement-rate-metrics{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: beige;
+    height: 14rem;
+}
+
+.interactions{
+    grid-column: 1/2;
+    grid-row: 1/1;
+    background-color: crimson;
+}
+
+.engagement{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color: greenyellow;
 }
 
 .reach{
