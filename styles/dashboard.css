@@ -36,7 +36,7 @@ body{
     padding-right: 2rem;
 }
 
-.audience-growth-header{
+.audience-growth-header, .engagement-rate-header{
     display: flex;
     justify-content: space-between;
 }
