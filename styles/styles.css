@@ -37,6 +37,10 @@ header{
     align-items: center;
 }
 
+.logo-holder img:hover{
+    cursor: pointer;
+}
+
 .menu-holder{
     display: flex;
     justify-content: space-around;
