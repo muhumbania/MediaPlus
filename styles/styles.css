@@ -152,6 +152,7 @@ header img{
     color: white;
     border: none;
     z-index: 1;
+    border-radius: 1px;
 }
 
 .new-post-button:hover{
