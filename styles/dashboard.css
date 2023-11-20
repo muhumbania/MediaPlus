@@ -44,7 +44,7 @@ p{
     padding-right: 2rem;
 }
 
-.audience-growth-header, .engagement-rate-header, .reach-header{
+.audience-growth-header, .engagement-rate-header, .reach-header, .audience-header{
     display: flex;
     justify-content: space-between;
 }
