@@ -44,7 +44,7 @@ p{
     padding-right: 2rem;
 }
 
-.audience-growth-header, .engagement-rate-header, .reach-header, .audience-header{
+.audience-growth-header, .engagement-rate-header, .reach-header, .audience-header, .content-type-header{
     display: flex;
     justify-content: space-between;
 }
@@ -104,8 +104,8 @@ p{
 }
 
 .interactions{
-    grid-column: 1/2;
-    grid-row: 1/1;
+    /* grid-column: 1/2;
+    grid-row: 1/2; */
     background-color: crimson;
 }
 
