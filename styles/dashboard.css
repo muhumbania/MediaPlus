@@ -29,11 +29,11 @@ p{
 }
 
 .dashboard{
-    height: 90vh;
+    /* height: 90vh; */
     background-color: aqua;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 2rem;
 }
 
@@ -129,4 +129,8 @@ p{
 
 .content-performence{
     background-color: cornflowerblue;
+}
+
+.age-distribution{
+    background-color: grey;
 }
