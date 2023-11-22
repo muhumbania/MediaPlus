@@ -138,3 +138,8 @@ p{
 .gender-distribution{
     background-color: goldenrod;
 }
+
+.location-distribution{
+    background-color: azure;
+    grid-column: 3/5;
+}
