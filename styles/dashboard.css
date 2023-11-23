@@ -126,6 +126,25 @@ p{
     grid-template-rows: 1fr 1fr;
 }
 
+.total-reach{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-color: bisque;
+}
+
+.reach-per-period{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    background-color: chocolate;
+}
+
+.reach-graph{
+    grid-column: 1/3;
+    grid-row: 1/3;
+    background-color: lightslategray;
+    height: 15rem;
+}
+
 
 
 .audience-demo{
