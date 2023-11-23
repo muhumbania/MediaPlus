@@ -136,7 +136,7 @@ p{
     background-color: grey;
 }
 
-.age-distribution img{
+.age-distribution img, .gender-distribution img{
     height: 15rem;
 }
 
