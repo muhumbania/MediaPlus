@@ -136,6 +136,10 @@ p{
     background-color: grey;
 }
 
+.age-distribution img{
+    height: 15rem;
+}
+
 .gender-distribution{
     background-color: goldenrod;
 }
