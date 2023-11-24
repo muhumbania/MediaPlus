@@ -1,6 +1,7 @@
 body{
     padding-right: 2rem;
     padding-left: 2rem;
+    position: relative;
 }
 
 p{
@@ -176,4 +177,10 @@ p{
 .location-distribution{
     background-color: azure;
     grid-column: 3/5;
+}
+
+.report-download{
+    position: absolute;
+    right: 2rem;
+    margin: 2rem 0;
 }
