@@ -50,6 +50,7 @@ p{
 .audience-growth-header, .engagement-rate-header, .reach-header, .audience-header, .content-type-header{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 0.5rem;
 }
 
 .audience-growth-metrics{
