@@ -41,8 +41,10 @@ p{
 .audience-growth{
     background-color: #f5f5dc;
     grid-column: 1/3;
-    padding-left: 2rem;
-    padding-right: 2rem;
+}
+
+.audience-growth, .engagement-rate, .reach, .content-type, .content-performence, .age-distribution, .gender-distribution, .location-distribution{
+    padding: 1rem 1rem;
 }
 
 .audience-growth-header, .engagement-rate-header, .reach-header, .audience-header, .content-type-header{
