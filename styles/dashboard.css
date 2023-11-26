@@ -185,4 +185,8 @@ p{
     position: absolute;
     right: 2rem;
     margin: 2rem 0;
+    background-color: rgba(39, 127, 226, 0.795);
+    padding: 0.5rem 1rem;
+    border: none;
+    color: white;
 }
