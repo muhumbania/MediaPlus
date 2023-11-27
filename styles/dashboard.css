@@ -105,6 +105,7 @@ p{
     grid-template-rows: 1fr 1fr;
     background-color: beige;
     height: 14rem;
+    gap: 1rem;
 }
 
 .interactions{
