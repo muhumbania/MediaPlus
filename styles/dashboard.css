@@ -68,6 +68,21 @@ p{
     background-color: rgb(108, 108, 204);
     grid-column: 1/2;
     grid-row: 1/2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-title{
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+}
+
+.item-information{
+
 }
 
 .new-followers{
