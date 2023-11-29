@@ -81,18 +81,10 @@ p{
     left: 0.5rem;
 }
 
-.item-information{
-
-}
-
 .new-followers{
     background-color: coral;
     grid-column: 1/2;
     grid-row: 2/3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .graph-followers{
@@ -124,10 +116,16 @@ p{
     gap: 1rem;
 }
 
-.interactions{
+.interactions, .engagement, .new-followers, .total-followers{
     /* grid-column: 1/2;
     grid-row: 1/2; */
     background-color: crimson;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 0.5rem;
+
 }
 
 .engagement{
