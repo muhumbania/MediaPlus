@@ -49,7 +49,7 @@ p{
 }
 
 .total-followers, .new-followers, .graph-followers, .interactions, .engagement, .engagement-graph, .total-reach, .reach-per-period, .reach-graph, .content-type-graph, .content-performence-graph, .age-distribution-graph, .gender-distribution-graph, .location-distribution-graph{
-    background-color: aqua;
+    background-color: rgb(167, 177, 177);
 }
 
 .audience-growth-metrics, .engagement-rate-metrics, .reach-metrics, .content-type-graph, .content-performence-graph, .age-distribution-graph, .gender-distribution-graph, .location-distribution-graph{
@@ -121,7 +121,10 @@ p{
 .engagement{
     grid-column: 1/2;
     grid-row: 2/3;
+}
 
+.engagement-graph{
+    grid-row: 1/3;
 }
 
 .reach{
