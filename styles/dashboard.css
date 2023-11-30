@@ -40,13 +40,20 @@ p{
 }
 
 .audience-growth{
-    background-color: #f5f5dc;
     grid-column: 1/3;
 }
 
 .audience-growth, .engagement-rate, .reach, .content-type, .content-performence, .age-distribution, .gender-distribution, .location-distribution{
     padding: 1rem 1rem;
     background-color: rgb(240, 240, 240);
+}
+
+.total-followers, .new-followers, .graph-followers, .interactions, .engagement, .engagement-graph, .total-reach, .reach-per-period, .reach-graph, .content-type-graph, .content-performence-graph, .age-distribution-graph, .gender-distribution-graph, .location-distribution-graph{
+    background-color: aqua;
+}
+
+.audience-growth-metrics, .engagement-rate-metrics, .reach-metrics, .content-type-graph, .content-performence-graph, .age-distribution-graph, .gender-distribution-graph, .location-distribution-graph{
+    height: 14rem;
 }
 
 .audience-growth-header, .engagement-rate-header, .reach-header, .audience-header, .content-type-header{
@@ -59,13 +66,11 @@ p{
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr;
-    background-color: cornflowerblue;
     height: 14rem;
     gap: 1rem;
 }
 
 .total-followers{
-    background-color: rgb(108, 108, 204);
     grid-column: 1/2;
     grid-row: 1/2;
     position: relative;
@@ -82,13 +87,11 @@ p{
 }
 
 .new-followers{
-    background-color: coral;
     grid-column: 1/2;
     grid-row: 2/3;
 }
 
 .graph-followers{
-    background-color: rgb(111, 180, 19);
     grid-row: 1/3;
 } 
 
@@ -100,15 +103,12 @@ p{
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr;
-    background-color: beige;
     height: 14rem;
     gap: 1rem;
 }
 
 .interactions, .engagement, .new-followers, .total-followers, .total-reach, .reach-per-period{
-    /* grid-column: 1/2;
-    grid-row: 1/2; */
-    background-color: crimson;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -121,7 +121,7 @@ p{
 .engagement{
     grid-column: 1/2;
     grid-row: 2/3;
-    background-color: greenyellow;
+
 }
 
 .reach{
@@ -133,33 +133,29 @@ p{
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 1rem;
+    height: 14rem;
 }
 
 .total-reach{
     grid-column: 3/4;
     grid-row: 1/2;
-    background-color: bisque;
+
 }
 
 .reach-per-period{
     grid-column: 3/4;
     grid-row: 2/3;
-    background-color: chocolate;
+
 }
 
 .reach-graph{
     grid-column: 1/3;
     grid-row: 1/3;
-    background-color: lightslategray;
-    height: 15rem;
-}
-
-.reach-graph img{
-    width: 30rem;
+ 
 }
 
 .audience-demo{
-    background-color: brown
+
 }
 
 .content-type{
