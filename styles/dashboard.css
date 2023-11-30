@@ -32,7 +32,7 @@ p{
 
 .dashboard{
     /* height: 90vh; */
-    background-color: aqua;
+    background-color: rgb(212, 204, 204);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -173,16 +173,12 @@ p{
 
 }
 
-.age-distribution img, .gender-distribution img, .location-distribution img, .reach-graph img{
-    height: 15rem;
-}
 
 .gender-distribution{
 
 }
 
 .location-distribution{
-    background-color: azure;
     grid-column: 3/5;
 }
 
