@@ -32,7 +32,7 @@ p{
 
 .dashboard{
     /* height: 90vh; */
-    background-color: rgb(212, 204, 204);
+    /* background-color: rgb(212, 204, 204); */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -66,7 +66,7 @@ p{
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr;
-    height: 14rem;
+    /* height: 14rem; */
     gap: 1rem;
 }
 
@@ -103,7 +103,7 @@ p{
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr;
-    height: 14rem;
+    /* height: 14rem; */
     gap: 1rem;
 }
 
