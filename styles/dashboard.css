@@ -10,6 +10,10 @@ p{
     font-weight: 300;
 }
 
+.item-title{
+    font-size: 0.8rem;
+}
+
 .dashboard-header{
     display: flex;
     justify-content: space-between;
