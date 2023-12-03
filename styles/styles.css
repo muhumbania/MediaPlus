@@ -114,12 +114,12 @@ header img{
 .item{
     height: 15rem;
     width: 20rem;
-    background-color: rgb(20, 108, 185);
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
 }
 
 .item-title{
-    background-color: antiquewhite;
+    background-color: rgb(255, 255, 255);
     padding-left: 1rem;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
