@@ -55,7 +55,7 @@ header{
 .menu-holder{
     display: flex;
     justify-content: space-around;
-    align-items: flex-end;
+    align-items: center;
     flex: 2;
     height: 10vh;
 }
