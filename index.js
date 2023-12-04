@@ -1,3 +1,6 @@
+
+const headerDivs = document.querySelectorAll('.menu-item');
+
 //header button list, to control the active icon
 const headerButtons = document.querySelectorAll('.header-icon');
 let state = 2;
@@ -52,6 +55,16 @@ overviewItems.forEach(overviewItem => {
 const buffer = ['0', '0'];
 headerButtons.forEach(headerButton => {
     headerButton.addEventListener('click', InverseIcon);
+});
+
+//Add the hover event for the header icons
+headerDivs.forEach(headerDiv => {
+    headerDiv.addEventListener('mouseenter', function(){
+        this.classList.add('hovered');
+    });
+    headerDiv.addEventListener('mouseleave', function(){
+        this.classList.remove('hovered');
+    });
 });
 
 

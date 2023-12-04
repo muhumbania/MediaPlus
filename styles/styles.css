@@ -9,13 +9,19 @@ p{
     font-family: Roboto;
     padding: 0;
     margin: 0;
-    font-weight: 300;
+    font-weight: 310;
 }
 
 .borders{
     border: solid;
     border-width: 1px;
     border-color: #ececec;
+}
+
+.hovered{
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 header{
@@ -85,11 +91,6 @@ header{
     border-bottom-style: solid;
     border-bottom-width: 2px;
     border-bottom-color: white;
-}
-
-.menu-item:hover{
-    background-color: #808080;
-    cursor: pointer;
 }
 
 .menu-item img{
