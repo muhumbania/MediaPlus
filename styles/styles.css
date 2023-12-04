@@ -12,6 +12,11 @@ p{
     font-weight: 300;
 }
 
+.borders{
+    border: solid;
+    border-width: 1px;
+    border-color: #ececec;
+}
 
 header{
     display: flex;
@@ -26,9 +31,6 @@ header{
     font-weight: 250;
     font-family: Roboto;
     font-size: 0.85rem;
-    border-bottom: solid;
-    border-bottom-width: 1px;
-    border-bottom-color: #ececec;
 
 }
 

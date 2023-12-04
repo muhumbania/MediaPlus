@@ -41,7 +41,7 @@ document.querySelector('.post').addEventListener('click', function(event){
 const overviewItems = document.querySelectorAll('.item');
 overviewItems.forEach(overviewItem => {
     overviewItem.addEventListener('mouseenter', function(){
-        this.style.transform = "scale(1.1)";
+        this.style.transform = "scale(1.03)";
     });
     overviewItem.addEventListener('mouseleave', function(){
         this.style.transform = "scale(1)";
