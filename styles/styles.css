@@ -31,8 +31,8 @@ header{
     align-items: center;
     background-color: #ffffff;
     height: 10vh;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
     color: #686869;
     font-weight: 250;
     font-family: Roboto;
@@ -82,7 +82,7 @@ header{
     align-items: center;
     gap: 0.5rem;
     width: 6rem;
-    padding: 0.2rem 0.2rem;
+    padding: 0.3rem 0.3rem;
     padding-bottom: 0.3rem;
     /* background-color: darkgreen; */
 }
@@ -103,6 +103,13 @@ header img{
     width: 2.7rem;
 }
 
+.global-flex{
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    gap: 4rem;
+}
+
 .overview{
     display: flex;
     flex-direction: row;
@@ -115,6 +122,7 @@ header img{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 3rem;
+    flex: 3;
 }
 
 .item{
@@ -309,11 +317,8 @@ header img{
 }
 
 .dashboard{
-    position: absolute;
-    top: 10vh;
-    bottom: 0;
-    left: 0;
-    width: 15vw;
+    width: 14rem;
+    height: 75vh;
     background-color: rgb(213, 238, 230);
     display: flex;
     flex-direction: column;
@@ -321,6 +326,7 @@ header img{
     gap: 2rem;
     padding-top: 1rem;
     padding-left: 1rem;
+    flex: 1;
 }
 
 .dashboard-items{
