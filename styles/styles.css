@@ -336,8 +336,8 @@ header img{
 .dashboard-items{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
     width: 100%;
+    padding-left: 0.5rem; 
 }
 
 .dashboard-item{
@@ -346,15 +346,8 @@ header img{
     align-items: center;
     gap: 0.5rem;
     width: 100%;
-    /* padding-left: 1rem; */
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-}
-
-.dashboard-item:hover{
-    background-color: #dadada;
-    cursor: pointer;
-
 }
 
 .dashboards{

@@ -1,6 +1,9 @@
 
 const headerDivs = document.querySelectorAll('.menu-item');
 
+//dashboard items
+const dashboardItems = document.querySelectorAll('.dashboard-item');
+
 //header button list, to control the active icon
 const headerButtons = document.querySelectorAll('.header-icon');
 let state = 2;
@@ -67,6 +70,15 @@ headerDivs.forEach(headerDiv => {
     });
 });
 
+//Add the hoveer event for the dashboard items
+dashboardItems.forEach(dashboardItem => {
+    dashboardItem.addEventListener('mouseenter', function(){
+        this.classList.add('hovered');
+    });
+    dashboardItem.addEventListener('mouseleave', function(){
+        this.classList.remove('hovered');
+    });
+});
 
 //implemented the inversion function
 function InverseIcon(){
