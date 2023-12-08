@@ -336,8 +336,12 @@ header img{
 .dashboard-items{
     display: flex;
     flex-direction: column;
-    width: 100%;
-    padding-left: 0.5rem; 
+    width: 14.5rem;
+     
+}
+
+.dash-title{
+    padding-left: 0.5rem;
 }
 
 .dashboard-item{
@@ -348,6 +352,7 @@ header img{
     width: 100%;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
 }
 
 .dashboards{
