@@ -257,16 +257,14 @@ header img{
 .account{
     display: flex;
     flex-direction: column;
-    width: 20rem;
-    height: 80vh;
+    width: 14rem;
+    height: 32.3rem;
     background-color: aliceblue;
-    padding-left: 1rem;
+    /* padding-left: 1rem;
     padding-right: 2rem;
     padding-top: 1rem;
-    padding-bottom: 1rem;
-    position: absolute;
-    top: 10vh;
-    right: 1rem;
+    padding-bottom: 1rem; */
+    
     z-index: 2;
 }
 
