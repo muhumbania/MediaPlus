@@ -164,15 +164,13 @@ header img{
 }
 
 .new-post-button{
-    position: absolute;
-    bottom: 2rem;
-    right: 2rem;
     padding: 0.8rem 1rem;
     background-color: #041E42;
     color: white;
     border: none;
     z-index: 1;
     border-radius: 2px;
+    width: 14rem;
 }
 
 .new-post-button:hover{
@@ -319,7 +317,7 @@ header img{
 
 .dashboard{
     width: 14rem;
-    height: 32.3rem;
+    height: 22.3rem;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     display: flex;
@@ -330,6 +328,7 @@ header img{
     /* padding-left: 1rem; */
     flex: 1;
 }
+
 
 .dashboard-items{
     display: flex;
@@ -357,6 +356,18 @@ header img{
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+
+.Dashboard{
+    flex: 1;
+    height: 32.3rem;
+    background-color: #041E42;
+}
+
+.my-accounts{
+    flex: 1;
+    height: 32.3rem;
+    background-color: #041E42;
 }
 
 .footer{
