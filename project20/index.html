@@ -7,7 +7,7 @@
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <title>MediaPlus</title>
 </head>
-<body class="bg-[#eef2f5;] static">
+<body class="bg-[#eef2f5;] static overflow-hidden">
     <header class="flex flex-row h-[8vh] bg-white">
         <div class="basis-1/2 sm:basis-1/4 flex flex-row justify-start pl-12 items-center">
             Logo
@@ -196,9 +196,32 @@
         </div>
     </div>
 
-    <div class="h-screen w-screen fixed top-0 bg-white z-10 opacity-75">
-        p
+    <div class="h-screen w-screen flex justify-center items-center fixed top-0 bg-white z-10 opacity-75">
     </div>
+
+    <div class="h-screen w-screen flex justify-center items-center fixed top-0 z-20">
+        <div class="h-[400px] w-[500px] bg-blue-500 z-10 flex flex-col">
+            <div class="flex bg-red-400">
+                <div class="flex">
+                    <box-icon name='facebook-circle' size="md" type='logo' color="#4267B2" ></box-icon>
+                    <input type="radio">
+                </div>
+                <div class="flex">
+                    <box-icon name='instagram-alt' size="md" type='logo' color="#8a3ab9"></box-icon>
+                    <input type="radio">
+                </div>
+                <div class="flex">
+                    <box-icon name='linkedin-square' size="md" type='logo' color="#0e76a8" ></box-icon>
+                    <input type="radio">
+                </div>
+                <div class="flex">
+                    <box-icon name='twitter' size="md" type='logo' color="#1DA1F2"></box-icon>
+                    <input type="radio">
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <div class="fixed bottom-12 right-12 flex items-center">
         <box-icon type='solid' name='plus-circle' size="lg" color="#3b82f6" class="md:hidden"></box-icon>
