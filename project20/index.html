@@ -200,29 +200,28 @@
     </div>
 
     <div class="h-screen w-screen flex justify-center items-center fixed top-0 z-20">
-        <div class="h-[400px] w-[500px] bg-blue-500 z-10 flex flex-col px-4">
-            <div class="flex items-center justify-between  bg-red-400 h-14">
+        <div class="h-[400px] w-[500px] bg-white border-1 shadow-2xl rounded-md z-10 flex flex-col justify-evenly px-4">
+            <div class="flex items-center justify-between h-14">
                 <div class="flex">
                     <box-icon name='facebook-circle' size="md" type='logo' color="#4267B2" ></box-icon>
-                    <input type="radio">
+                    <input type="checkbox">
                 </div>
                 <div class="flex">
                     <box-icon name='instagram-alt' size="md" type='logo' color="#8a3ab9"></box-icon>
-                    <input type="radio">
+                    <input type="checkbox">
                 </div>
                 <div class="flex">
                     <box-icon name='linkedin-square' size="md" type='logo' color="#0e76a8" ></box-icon>
-                    <input type="radio">
+                    <input type="checkbox">
                 </div>
                 <div class="flex">
                     <box-icon name='twitter' size="md" type='logo' color="#1DA1F2"></box-icon>
-                    <input type="radio">
+                    <input type="checkbox">
                 </div>
             </div>
-            <input type="text" placeholder="What's new ?" class="h-[250px] border-none border-transparent">
-            <div class="flex">
-                <box-icon name='image-add' size="md" type='logo' color="#0e76a8" ></box-icon>
-                <p>Post</p>
+            <textarea type="text" placeholder="What's new ?" class="h-[250px] text-md outline-none resize-none"></textarea>
+            <div class="flex items-center justify-center bg-blue-500 text-white text-lg font-medium h-10 rounded-md cursor-pointer">
+                Post
             </div>
         </div>
     </div>
