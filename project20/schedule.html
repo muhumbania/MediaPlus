@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <title>MediaPlus</title>
+</head>
+<body class="bg-[#eef2f5;] static select-none" id="body">
+    <header class="flex flex-row h-[8vh] bg-white">
+        <div class="basis-1/2 sm:basis-1/4 flex flex-row justify-start pl-12 items-center">
+            Logo
+        </div>
+        <div class="hidden basis-1/2 sm:flex flex-row justify-center items-center gap-4 md:gap-18 text-gray-600 text-sm">
+            <div class="h-[8vh] flex items-center justify-center border-b-2 border-blue-500 h-icon" id="1">
+                <div class="h-12 flex flex-col items-center justify-center w-24 hover:bg-gray-100 rounded-md cursor-pointer">
+                    <box-icon type='regular' name='home' size='sm' color="#4b5563" class="hidden sm:inline i1"></box-icon>
+                    <p class="hidden md:inline">Home</p>
+                </div>
+            </div>
+
+            <div class="h-[8vh] flex items-center justify-center h-icon" id="2">
+                <div class="h-12 flex flex-col items-center justify-center w-24 hover:bg-gray-100 rounded-md cursor-pointer">
+                    <box-icon type='regular' name='calendar' size='sm' color="#4b5563" class="hidden sm:inline i2"></box-icon>
+                    <p class="hidden md:inline">Schedule</p>
+                </div>
+            </div>
+            <div class="h-[8vh] flex items-center justify-center h-icon" id="3">
+                <div class="h-12 flex flex-col items-center justify-center w-24 hover:bg-gray-100 rounded-md cursor-pointer">
+                    <box-icon type='regular' name='bar-chart-alt-2' size='sm' color="#4b5563" class="hidden sm:inline i3"></box-icon>
+                    <p class="hidden md:inline">Dashboards</p>
+                </div>
+            </div>
+            
+            <div class="h-[8vh] flex items-center justify-center h-icon" id="4">
+                <div class="h-12 flex flex-col items-center justify-center w-24 hover:bg-gray-100 rounded-md cursor-pointer">
+                    <box-icon type='regular' name='bell' size='sm' color="#4b5563" class="hidden sm:inline i4"></box-icon>
+                    <p class="hidden md:inline">Notifcations</p>
+                </div>
+            </div>
+        </div>
+        <div class="basis-1/2 sm:basis-1/4 flex flex-row justify-end pr-12 items-center">
+            <box-icon name='menu' size="md" color="#4b5563" class="sm:hidden cursor-pointer"></box-icon>
+            <box-icon type='solid' name='user-circle' color="#4b5563" size='md' class="cursor-pointer account"></box-icon>
+        </div>
+    </header>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
