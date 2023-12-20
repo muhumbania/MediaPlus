@@ -14,6 +14,12 @@ document.querySelector('.accountDiv').addEventListener('click', event => event.s
 //Header icons
 const headerIcons = document.querySelectorAll('.h-icon');
 
+//text area content
+const textarea = document.getElementById('postContent');
+
+//post button
+const postButton = document.getElementById('postButton');
+
 //Function for new post animation
 function display(state){
     if(state === true){
@@ -66,7 +72,13 @@ headerIcons.forEach(function(headerIcon){
     });
 });
 
+if(textarea.value.trim() === ''){
+    postButton.classList.remove('bg-blue-500');
+}else{
+    postButton.classList.add('bg-blue-500');
+}
 
+// alert(textarea.value.trim());
 
 
 
