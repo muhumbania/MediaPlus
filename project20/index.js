@@ -61,22 +61,26 @@ headerIcons.forEach(function(headerIcon){
         buffer.push(`${this.id}`);
         buffer.shift();
         
+
         if(buffer[0] !== buffer[1]){
             document.querySelector(`.i${buffer[1]}`).setAttribute('type', 'solid');
             document.querySelector(`.i${buffer[0]}`).setAttribute('type', 'regular');
+            document.getElementById(buffer[1]).classList.add('border-b-2');
+            document.getElementById(buffer[0]).classList.remove('border-b-2');
         }else{
             document.querySelector(`.i${buffer[0]}`).setAttribute('type', 'solid');
+            document.getElementById(buffer[0]).classList.add('border-b-2');
         }
 
-        // this.classList.add('border-b-2 border-blue-500');
+        
     });
 });
 
-if(textarea.value.trim() === ''){
-    postButton.classList.remove('bg-blue-500');
-}else{
-    postButton.classList.add('bg-blue-500');
-}
+// if(textarea.value.trim() === ''){
+//     postButton.classList.remove('bg-blue-500');
+// }else{
+//     postButton.classList.add('bg-blue-500');
+// }
 
 // alert(textarea.value.trim());
 
