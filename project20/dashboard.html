@@ -47,36 +47,37 @@
         </div>
     </header>
 
-    <div class=" mt-8 md:h-[86vh] w-screen flex gap-4 justify-center md:justify-evenly items-start min-[900px]:items-center bg-blue-500 px-12">
+    <div class=" mt-8 md:h-[86vh] w-screen flex gap-4 justify-center md:justify-evenly items-start min-[900px]:items-center px-12">
         <div class=" bg-red-200 w-[250px] h-[562px] hidden min-[1200px]:inline">
             Dashboards
         </div>
         <div class="flex flex-col gap-5">
-            <div class="flex justify-between">
-                <p>Dashboards</p>
-                <div class="flex">
-                    <P>Facebook</P>
-                    <box-icon name='chevron-down'></box-icon>
+            <div class="flex justify-between items-center inline min-[1200px]:hidden">
+                <p class="text-lg">Dashboards</p>
+                <div class="flex items-center">
+                    <P class="text-lg">Facebook</P>
+                    <box-icon name='chevron-down' class="cursor-pointer"></box-icon>
                 </div>
             </div>
-            <div class="grid grid-cols-2 min-[900px]:grid-cols-4 grid-rows-2 min-[900px]:grid-rows-1 gap-5 shrink-0  bg-gray-300">
-                <div class="bg-cyan-200 h-10">1</div>
-                <div class="bg-orange-200">2</div>
-                <div class="bg-pink-200">3</div>
-                <div class="bg-lime-200">4</div>
+            <div class="grid grid-cols-2 min-[900px]:grid-cols-4 grid-rows-2 min-[900px]:grid-rows-1 gap-5 shrink-0">
+                <div class="bg-white rounded-md border-1 shadow-md h-10">1</div>
+                <div class="bg-white rounded-md border-1 shadow-md">2</div>
+                <div class="bg-white rounded-md border-1 shadow-md">3</div>
+                <div class="bg-white rounded-md border-1 shadow-md">4</div>
             </div>
-            <div class="grid grid-cols-2 grid-rows-4 min-[900px]:grid-rows-2  gap-5 min-[900px]:grid-cols-4 min-[900px]:w-[900px] w-[400px] min-[900px]:h-[500px] shrink-0  bg-gray-300">
-                <div class="bg-yellow-200 col-span-2 h-[200px] min-[900px]:h-auto">Follower growth</div>
-                <div class="bg-cyan-200 ">Content distribution</div>
-                <div class="bg-orange-200">Top content</div>
-                <div class="bg-pink-200 col-span-2">Audience location</div>
-                <div class="bg-lime-200">Gender distribution</div>
-                <div class="bg-indigo-200">Age distribution</div>
+            <div class="grid grid-cols-2 grid-rows-4 min-[900px]:grid-rows-2  gap-5 min-[900px]:grid-cols-4 min-[900px]:w-[900px] w-[400px] min-[900px]:h-[500px] shrink-0">
+                <div class="bg-white rounded-md border-1 shadow-md col-span-2 h-[200px] min-[900px]:h-auto">Follower growth</div>
+                <div class="bg-white rounded-md border-1 shadow-md ">Content distribution</div>
+                <div class="bg-white rounded-md border-1 shadow-md">Top content</div>
+                <div class="bg-white rounded-md border-1 shadow-md col-span-2">Audience location</div>
+                <div class="bg-white rounded-md border-1 shadow-md">Gender distribution</div>
+                <div class="bg-white rounded-md border-1 shadow-md">Age distribution</div>
             </div>
         </div>
         
     </div>
-
+    
+    <script src="./dashboard.js"></script>
        
 </body>
 </html>
