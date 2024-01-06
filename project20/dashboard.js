@@ -3,11 +3,11 @@ var ctx = document.getElementById('myChart').getContext('2d');
     
 // Create a chart
 var myChart = new Chart(ctx, {
-    type: 'pie', // Specify the type of chart (e.g., bar, line, pie)
+    type: 'line', // Specify the type of chart (e.g., bar, line, pie)
     data: {
         labels: ['Label 1', 'Label 2', 'Label 3'],
         datasets: [{
-            label: 'My Dataset',
+            label: 'Content Distribution',
             data: [10, 20, 15],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
