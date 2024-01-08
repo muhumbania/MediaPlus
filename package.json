@@ -1,5 +1,18 @@
 {
   "dependencies": {
-    "evo-calendar": "^1.1.3"
-  }
+    "evo-calendar": "^1.1.3",
+    "express": "^4.18.2"
+  },
+  "name": "mediaplus",
+  "description": "Social Media Dashboard to bring all social media together in order to save time for community management and gives an overview of each social media",
+  "version": "1.0.0",
+  "main": "testApi.js",
+  "devDependencies": {},
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
