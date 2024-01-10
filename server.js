@@ -21,6 +21,10 @@ app.get('/schedule', (req, res)=>{
     res.render('schedule');
 });
 
+app.get('/login', (req, res)=>{
+    res.render('signin');
+});
+
 app.listen(3000 , ()=>{
     console.log(`server listening to port ${port}`);
 });
