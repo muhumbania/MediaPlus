@@ -13,6 +13,10 @@ app.get('/dashboard', (req, res)=>{
     res.render('dashboard');
 });
 
+app.get('/notifications', (req, res)=>{
+    res.render('notifications');
+});
+
 app.listen(3000 , ()=>{
     console.log(`server listening to port ${port}`);
 });
