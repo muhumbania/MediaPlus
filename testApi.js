@@ -1,12 +1,12 @@
-import  express  from "express";
+// import  express  from "express";
 
-const appp = express();
-const port = 3000;
+// const appp = express();
+// const port = 3000;
 
-appp.get('/', (req, res)=>{
-    res.send('Hello world');
-});
+// appp.get('/', (req, res)=>{
+//     res.send('Hello world');
+// });
 
-appp.listen(3000 , ()=>{
-    console.log(`server listening to port ${port}`);
-});
+// appp.listen(3000 , ()=>{
+//     console.log(`server listening to port ${port}`);
+// });
