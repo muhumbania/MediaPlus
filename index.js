@@ -76,13 +76,6 @@ headerIcons.forEach(function(headerIcon){
     });
 });
 
-// if(textarea.value.trim() === ''){
-//     postButton.classList.remove('bg-blue-500');
-// }else{
-//     postButton.classList.add('bg-blue-500');
-// }
-
-// alert(textarea.value.trim());
 
 
 
