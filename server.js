@@ -17,6 +17,10 @@ app.get('/notifications', (req, res)=>{
     res.render('notifications');
 });
 
+app.get('/schedule', (req, res)=>{
+    res.render('schedule');
+});
+
 app.listen(3000 , ()=>{
     console.log(`server listening to port ${port}`);
 });
