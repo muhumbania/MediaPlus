@@ -16,6 +16,8 @@ app.use('/', notificationsRoutes);
 app.use('/', scheduleRoutes);
 app.use('/', authRoutes);
 
+app.use(express.static('public'));
+
 app.listen(3000 , ()=>{
     console.log(`server listening to port ${port}`);
 });
