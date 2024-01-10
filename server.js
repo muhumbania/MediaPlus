@@ -25,6 +25,10 @@ app.get('/login', (req, res)=>{
     res.render('signin');
 });
 
+app.get('/register', (req, res)=>{
+    res.render('signup');
+});
+
 app.listen(3000 , ()=>{
     console.log(`server listening to port ${port}`);
 });
