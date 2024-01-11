@@ -15,9 +15,9 @@
         </div>
         <div class="hidden basis-1/2 sm:flex flex-row justify-center items-center gap-4 md:gap-18 text-gray-600 text-sm">
             <a href="/">
-                <div class="h-[8vh] flex items-center justify-center border-b-2 border-blue-500 h-icon" id="1">
+                <div class="h-[8vh] flex items-center justify-center <%= currentPage === 'home'? 'border-b-2': ''  %> border-blue-500 h-icon" id="1">
                     <div class="h-12 flex flex-col items-center justify-center w-24 hover:bg-gray-100 rounded-md cursor-pointer">
-                        <box-icon type='regular' name='home' size='sm' color="#4b5563" class="hidden sm:inline i1"></box-icon>
+                        <box-icon type=<%= currentPage === 'home'? 'solid': 'regular'  %> name='home' size='sm' color="#4b5563" class="hidden sm:inline i1"></box-icon>
                         <p class="hidden md:inline">Home</p>
                     </div>
                 </div>
