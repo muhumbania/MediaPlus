@@ -33,9 +33,9 @@
             </a>
 
             <a href="/dashboard">
-                <div class="h-[8vh] flex items-center justify-center h-icon" id="3">
+                <div class="h-[8vh] flex items-center justify-center <%= currentPage === 'dashboard'? 'border-b-2': ''  %> border-blue-500 h-icon" id="3">
                     <div class="h-12 flex flex-col items-center justify-center w-24 hover:bg-gray-100 rounded-md cursor-pointer">
-                        <box-icon type='regular' name='bar-chart-alt-2' size='sm' color="#4b5563" class="hidden sm:inline i3"></box-icon>
+                        <box-icon type=<%= currentPage === 'dashboard'? 'solid': 'regular'  %> name='bar-chart-alt-2' size='sm' color="#4b5563" class="hidden sm:inline i3"></box-icon>
                         <p class="hidden md:inline">Dashboards</p>
                     </div>
                 </div>
