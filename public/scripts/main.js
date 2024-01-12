@@ -5,6 +5,10 @@ const startPostButton = document.getElementById('startPost');
 const accountDiv = document.querySelector('.accountDiv');
 let displayAccount = false;
 
+window.addEventListener('click', function(){
+    accountDiv.classList.add('hidden');
+});
+
 postButton.style.pointerEvents = "none";
 postContent.addEventListener('input', function(){
     if (postContent.value.trim() !== "") {
@@ -20,7 +24,8 @@ postContent.addEventListener('input', function(){
       }
 });
 
-accountIcon.addEventListener('click', function(){
+accountIcon.addEventListener('click', function(event){
+    event.stopPropagation();
     displayAccount =! displayAccount;
     if(displayAccount){
         accountDiv.classList.remove('hidden');
