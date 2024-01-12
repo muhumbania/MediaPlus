@@ -6,7 +6,7 @@ router.get('/', (req, res)=>{
 });
 
 router.post('/post', (req, res)=>{
-    res.render('index', {currentPage: 'home'});
+    res.redirect('/');
     console.log(req.body);
 });
 
