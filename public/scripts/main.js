@@ -9,6 +9,10 @@ window.addEventListener('click', function(){
     accountDiv.classList.add('hidden');
 });
 
+accountDiv.addEventListener('click', function(event){
+    event.stopPropagation();
+});
+
 postButton.style.pointerEvents = "none";
 postContent.addEventListener('input', function(){
     if (postContent.value.trim() !== "") {
