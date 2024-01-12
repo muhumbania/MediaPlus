@@ -3,10 +3,10 @@
     <div class="flex flex-col items-center justify-start w-sreen">
         <div class="flex items-center justify-start gap-4 mt-8 mb-4 h-14 pl-3 bg-white rounded-md w-[500px]">
             <a href="/notifications">
-                <p class="bg-gray-100 py-1 px-4 rounded-lg hover:bg-gray-200 hover:cursor-pointer">All</p>
+                <p class="bg-gray-100 py-1 px-4 rounded-lg hover:bg-gray-200 hover:cursor-pointer ">All</p>
             </a>
             <a href="/notifications/facebook">
-                <p class="bg-gray-100 py-1 px-4 rounded-lg hover:bg-gray-200 hover:cursor-pointer">Facebook</p>
+                <p class=" py-1 px-4 rounded-lg hover:bg-blue-500 hover:cursor-pointer <%= filter === 'facebook'? 'bg-blue-500 text-white' : 'bg-gray-100'  %>">Facebook</p>
             </a>
             <a href="/notifications/linkedin">
                 <p class="bg-gray-100 py-1 px-4 rounded-lg hover:bg-gray-200 hover:cursor-pointer">LinkedIn</p>
