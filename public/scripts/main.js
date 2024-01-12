@@ -10,7 +10,10 @@ let displayPost = false;
 
 window.addEventListener('click', function(){
     accountDiv.classList.add('hidden');
+    postForm.classList.add('hidden');
+    curtain.classList.add('hidden');
     displayAccount = false;
+    displayPost = false;
 });
 
 accountDiv.addEventListener('click', function(event){
