@@ -13,6 +13,7 @@ const __filename = new URL(import.meta.url).pathname;
 const __dirname = path.dirname(__filename)
 
 app.set('view engine', 'ejs');
+app.use(express.urlencoded({ extended: true }));
 
 app.use('/', indexRoutes);
 app.use('/', dashboardRoutes);
