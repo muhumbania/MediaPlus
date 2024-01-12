@@ -1,27 +1,4 @@
-// const headerIcons = document.querySelectorAll('.h-icon');
 
-
-
-// for(icon of headerIcons){
-//     icon.addEventListener('click', function(){
-//         const buffer = ['1', '1'];
-//         buffer.push(`${this.id}`);
-//         buffer.shift();
-
-//         alert(buffer);
-        
-//         if(buffer[0] !== buffer[1]){
-//             document.querySelector(`.i${buffer[1]}`).setAttribute('type', 'solid');
-//             document.querySelector(`.i${buffer[0]}`).setAttribute('type', 'regular');
-//             document.getElementById(buffer[1]).classList.add('border-b-2');
-//             document.getElementById(buffer[0]).classList.remove('border-b-2');
-//         }else{
-//             document.querySelector(`.i${buffer[0]}`).setAttribute('type', 'solid');
-//             document.getElementById(buffer[0]).classList.add('border-b-2');
-//         }
-
-//     });
-// }
 
 
 
