@@ -3,10 +3,14 @@ const postContent = document.getElementById('postContent');
 const accountIcon = document.querySelector('.account');
 const startPostButton = document.getElementById('startPost');
 const accountDiv = document.querySelector('.accountDiv');
+const postForm = document.querySelector('.newPost');
+const curtain = document.querySelector('.curtain');
 let displayAccount = false;
+let displayPost = false;
 
 window.addEventListener('click', function(){
     accountDiv.classList.add('hidden');
+    displayAccount = false;
 });
 
 accountDiv.addEventListener('click', function(event){
@@ -29,15 +33,23 @@ postContent.addEventListener('input', function(){
 });
 
 accountIcon.addEventListener('click', function(event){
-    event.stopPropagation();
     displayAccount =! displayAccount;
     if(displayAccount){
         accountDiv.classList.remove('hidden');
     }else{
         accountDiv.classList.add('hidden');
     }
+    event.stopPropagation();
 });
 
-startPostButton.addEventListener('click', function(){
-    alert('start post');
+startPostButton.addEventListener('click', function(event){
+    displayPost =! displayPost;
+    if(displayPost){
+        postForm.classList.remove('hidden');
+        curtain.classList.remove('hidden');
+    }else{
+        postForm.classList.add('hidden');
+        curtain.classList.add('hidden');
+    }
+    event.stopPropagation();
 });
