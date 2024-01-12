@@ -3,20 +3,25 @@ const postContent = document.getElementById('postContent');
 const accountIcon = document.querySelector('.account');
 const startPostButton = document.getElementById('startPost');
 const accountDiv = document.querySelector('.accountDiv');
-const postForm = document.querySelector('.newPost');
+const postDiv = document.querySelector('.newPost');
 const curtain = document.querySelector('.curtain');
+const postForm = document.querySelector('.postForm');
 let displayAccount = false;
 let displayPost = false;
 
 window.addEventListener('click', function(){
     accountDiv.classList.add('hidden');
-    postForm.classList.add('hidden');
+    postDiv.classList.add('hidden');
     curtain.classList.add('hidden');
     displayAccount = false;
     displayPost = false;
 });
 
 accountDiv.addEventListener('click', function(event){
+    event.stopPropagation();
+});
+
+postForm.addEventListener('click', function(event){
     event.stopPropagation();
 });
 
@@ -48,10 +53,10 @@ accountIcon.addEventListener('click', function(event){
 startPostButton.addEventListener('click', function(event){
     displayPost =! displayPost;
     if(displayPost){
-        postForm.classList.remove('hidden');
+        postDiv.classList.remove('hidden');
         curtain.classList.remove('hidden');
     }else{
-        postForm.classList.add('hidden');
+        postDiv.classList.add('hidden');
         curtain.classList.add('hidden');
     }
     event.stopPropagation();
