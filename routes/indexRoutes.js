@@ -12,8 +12,3 @@ router.post('/post', (req, res)=>{
 
 export default router;
 
-
-
-
-
-

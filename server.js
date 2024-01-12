@@ -5,6 +5,7 @@ import notificationsRoutes from './routes/notificationsRoutes.js';
 import scheduleRoutes from './routes/scheduleRoutes.js';
 import authRoutes from './routes/authRoutes.js';
 import path from 'path';
+import flash from "connect-flash";
 
 const app = express();
 const port = 3000;
@@ -14,6 +15,7 @@ const __dirname = path.dirname(__filename)
 
 app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: true }));
+app.use(flash());
 
 app.use('/', indexRoutes);
 app.use('/', dashboardRoutes);
