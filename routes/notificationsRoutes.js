@@ -2,7 +2,10 @@ import  express  from "express";
 const router = express.Router();
 
 router.get('/notifications', (req, res)=>{
-    res.render('notifications', {currentPage: 'notifications'});
+    res.render('notifications', {
+        currentPage: 'notifications',
+        filter: 'all'
+    });
 });
 
 router.get('/notifications/facebook', (req, res)=>{
