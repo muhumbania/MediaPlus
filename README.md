@@ -11,3 +11,8 @@ Social medias:
 -Instagram 
 -Linkedin
 -X(Twitter)
+
+insights:
+-Followers
+-Posts
+-Demographic
