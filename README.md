@@ -5,6 +5,8 @@ Features:
 
 -Posting
 -View insights
+-Post scheduling
+-Notifications insights 
 
 Social medias:
 -Facebook 
