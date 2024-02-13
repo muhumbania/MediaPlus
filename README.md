@@ -15,6 +15,6 @@ Social medias:
 -X(Twitter)
 
 insights:
--Followers
--Posts
+-Followers(Followers growth )
+-Post distribution 
 -Demographic
