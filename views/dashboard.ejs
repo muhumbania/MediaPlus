@@ -6,12 +6,12 @@
                 <p class="text-lg">Dashboards</p>
                 <div class="flex relative items-center">
                     <P class="text-lg"><%= option  %></P>
-                    <box-icon name='chevron-down' class="cursor-pointer"></box-icon>
-                    <div class="absolute top-8 right-0 bg-white shadow-2xl border-1 border-gray-100 rounded-lg w-36 flex flex-col gap-2 p-1">
-                        <a href="/dashboard/facebook"><p class="hover:bg-gray-200 px-1 <%= option === 'Facebook'? 'bg:bg-gray-200': ''  %> rounded-md cursor-pointer">Facebook</p></a>
-                        <a href="/dashboard/linkedin"><p class="hover:bg-gray-200 px-1 <%= option === 'LinkedIn'? 'bg:bg-gray-200': ''  %> rounded-md cursor-pointer">Linkedin</p></a>
-                        <a href="/dashboard/instagram"><p class="hover:bg-gray-200 px-1 <%= option === 'Instagram'? 'bg:bg-gray-200': ''  %> rounded-md cursor-pointer">Instagram</p></a>
-                        <a href="/dashboard/x"><p class="hover:bg-gray-200 px-1 <%= option === 'X'? 'bg:bg-gray-200': ''  %> rounded-md cursor-pointer">X</p></a>    
+                    <box-icon name='chevron-down' class="cursor-pointer" id="drop"></box-icon>
+                    <div class="absolute top-8 right-0 bg-white shadow-2xl border-1 border-gray-100 rounded-lg w-36 flex flex-col gap-2 p-1 dropdownDiv">
+                        <a href="/dashboard/facebook"><p class="hover:bg-gray-200 px-1 <%= option === 'Facebook'? 'bg-gray-200': ''  %> rounded-md cursor-pointer">Facebook</p></a>
+                        <a href="/dashboard/linkedin"><p class="hover:bg-gray-200 px-1 <%= option === 'LinkedIn'? 'bg-gray-200': ''  %> rounded-md cursor-pointer">LinkedIn</p></a>
+                        <a href="/dashboard/instagram"><p class="hover:bg-gray-200 px-1 <%= option === 'Instagram'? 'bg-gray-200': ''  %> rounded-md cursor-pointer">Instagram</p></a>
+                        <a href="/dashboard/x"><p class="hover:bg-gray-200 px-1 <%= option === 'X'? 'bg-gray-200': ''  %> rounded-md cursor-pointer">X</p></a>    
                     </div>
                 </div>
             </div>

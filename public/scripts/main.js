@@ -6,13 +6,19 @@ const accountDiv = document.querySelector('.accountDiv');
 const postDiv = document.querySelector('.newPost');
 const curtain = document.querySelector('.curtain');
 const postForm = document.querySelector('.postForm');
+const dropdownArrow = document.getElementById('drop');
+const dropdownDiv = document.querySelector('.dropdownDiv');
+
 let displayAccount = false;
 let displayPost = false;
+let displayDropdown = false;
 
 window.addEventListener('click', function(){
     accountDiv.classList.add('hidden');
     postDiv.classList.add('hidden');
     curtain.classList.add('hidden');
+    dropdownDiv.classList.add('hidden');
+    displayDropdown = false;
     displayAccount = false;
     displayPost = false;
 });
@@ -22,6 +28,10 @@ accountDiv.addEventListener('click', function(event){
 });
 
 postForm.addEventListener('click', function(event){
+    event.stopPropagation();
+});
+
+dropdownDiv.addEventListener('click', function(event){
     event.stopPropagation();
 });
 
@@ -61,3 +71,16 @@ startPostButton.addEventListener('click', function(event){
     }
     event.stopPropagation();
 });
+
+dropdownArrow.addEventListener('click', function(event){
+    alert('hey');
+    // displayDropdown =! displayDropdown;
+    // if(displayDropdown){
+    //     dropdownDiv.classList.remove('hidden');
+    // }else{
+    //     dropdownDiv.classList.add('hidden');
+    // }
+    // event.stopPropagation();
+});
+
+

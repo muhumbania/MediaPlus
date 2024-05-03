@@ -12,7 +12,7 @@ router.get('/dashboard/facebook', (req, res)=>{
 router.get('/dashboard/linkedin', (req, res)=>{
     res.render('dashboard', {
         currentPage: 'dashboard',
-        option: 'Linkedin'
+        option: 'LinkedIn'
     });
 });
 
