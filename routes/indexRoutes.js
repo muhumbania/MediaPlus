@@ -2,7 +2,11 @@ import  express  from "express";
 const router = express.Router();
 
 router.get('/', (req, res)=>{
-    res.render('index', {currentPage: 'home'});
+    if(req.isAuthenticated()){
+        res.render("index", {currentPage: 'home', user: req.user});
+    }else{
+        res.redirect("/login");
+    }
 });
 
 router.post('/post', (req, res)=>{

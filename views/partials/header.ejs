@@ -11,7 +11,7 @@
 <body class="bg-[#eef2f5;] static select-none" id="body">
     <header class="flex flex-row h-[8vh] bg-white">
         <div class="basis-1/2 sm:basis-1/4 flex flex-row justify-start pl-12 items-center">
-            Logo
+            mediaPlus
         </div>
         <div class="hidden basis-1/2 sm:flex flex-row justify-center items-center gap-4 md:gap-18 text-gray-600 text-sm">
             <a href="/">
@@ -51,7 +51,8 @@
             </a>
             
         </div>
-        <div class="basis-1/2 sm:basis-1/4 flex flex-row justify-end pr-12 items-center">
+        <div class="basis-1/2 sm:basis-1/4 flex flex-row justify-end pr-12 gap-2 items-center">
+            <p><%= user.username %></p>
             <box-icon name='menu' size="md" color="#4b5563" class="sm:hidden cursor-pointer"></box-icon>
             <box-icon type='solid' name='user-circle' color="#4b5563" size='md' class="cursor-pointer account"></box-icon>
         </div>

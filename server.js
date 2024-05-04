@@ -5,7 +5,7 @@ import notificationsRoutes from './routes/notificationsRoutes.js';
 import scheduleRoutes from './routes/scheduleRoutes.js';
 import authRoutes from './routes/authRoutes.js';
 // import path from 'path';
-// import flash from "connect-flash";
+import flash from "connect-flash";
 
 import bodyParser from "body-parser";
 import pg from "pg";
@@ -23,7 +23,7 @@ const port = 3000;
 
 app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: true }));
-// app.use(flash());
+app.use(flash());
 
 const saltRounds = 10;
 // env.config();
@@ -55,18 +55,20 @@ app.use('/', indexRoutes);
 app.use('/', dashboardRoutes);
 app.use('/', notificationsRoutes);
 app.use('/', scheduleRoutes);
-app.use('/', authRoutes);
+// app.use('/', authRoutes);
 
 app.post(
     "/login",
     passport.authenticate("local", {
       successRedirect: "/",
       failureRedirect: "/login",
+      failureFlash: true
     })
 );
 
 app.post("/register", async (req, res) => {
-    const email = req.body.username;
+    const email = req.body.email;
+    const username = req.body.username;
     const password = req.body.password;
 
     try {
@@ -82,8 +84,8 @@ app.post("/register", async (req, res) => {
             console.error("Error hashing password:", err);
             } else {
             const result = await db.query(
-                "INSERT INTO users (email, password) VALUES ($1, $2) RETURNING *",
-                [email, hash]
+                "INSERT INTO users (email, password, username) VALUES ($1, $2, $3) RETURNING *",
+                [email, hash, username]
             );
             const user = result.rows[0];
             req.login(user, (err) => {
@@ -101,7 +103,7 @@ app.post("/register", async (req, res) => {
 passport.use(
     new Strategy(async function verify(username, password, cb) {
       try {
-        const result = await db.query("SELECT * FROM users WHERE email = $1 ", [
+        const result = await db.query("SELECT * FROM users WHERE username = $1 ", [
           username,
         ]);
         if (result.rows.length > 0) {
@@ -118,12 +120,12 @@ passport.use(
                 return cb(null, user);
               } else {
                 //Did not pass password check
-                return cb(null, false);
+                return cb(null, false, { message: "Incorrect password." });
               }
             }
           });
         } else {
-          return cb("User not found");
+          return cb(null, false, { message: "Incorrect username." });
         }
       } catch (err) {
         console.log(err);
@@ -132,11 +134,11 @@ passport.use(
   );
 
 app.get('/login', (req, res) => {
-    res.render("login.ejs");
+    res.render("signin", { message: req.flash('error') });
 });
 
 app.get('/register', (req, res) => {
-    res.render("register.ejs");
+    res.render("signup");
 });
 
 passport.serializeUser((user, cb) => {
