@@ -2,56 +2,33 @@ import  express  from "express";
 const router = express.Router();
 
 router.get('/dashboard/facebook', (req, res)=>{
-
-    if(req.isAuthenticated()){
-        res.render("dashboard", {
-            currentPage: 'dashboard', 
-            user: req.user,
-            option: 'Facebook'
-        });
-    }else{
-        res.redirect("/login");
-    }
+    isAuth('Facebook', req, res);
 });
 
 
 router.get('/dashboard/linkedin', (req, res)=>{
-
-    if(req.isAuthenticated()){
-        res.render("dashboard", {
-            currentPage: 'dashboard', 
-            user: req.user,
-            option: 'LinkedIn'
-        });
-    }else{
-        res.redirect("/login");
-    }
+    isAuth('LinkedIn', req, res);
 });
 
 router.get('/dashboard/instagram', (req, res)=>{
-
-    if(req.isAuthenticated()){
-        res.render("dashboard", {
-            currentPage: 'dashboard', 
-            user: req.user,
-            option: 'Instagram'
-        });
-    }else{
-        res.redirect("/login");
-    }
+    isAuth('Instagram', req, res);
 });
 
 router.get('/dashboard/x', (req, res)=>{
+    isAuth('X', req, res);
+});
+
+function isAuth(option, req, res){
     if(req.isAuthenticated()){
         res.render("dashboard", {
             currentPage: 'dashboard', 
             user: req.user,
-            option: 'X'
+            option: option
         });
     }else{
         res.redirect("/login");
     }
-});
+}
 
 export default router;
 
