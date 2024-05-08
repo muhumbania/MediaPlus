@@ -13,10 +13,11 @@ import bcrypt from "bcrypt";
 import passport from "passport";
 import { Strategy } from "passport-local";
 import session from "express-session";
-// import env from "dotenv";
+import env from "dotenv";
+env.config();
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT;
 
 // const __filename = new URL(import.meta.url).pathname;
 // const __dirname = path.dirname(__filename)
@@ -26,7 +27,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(flash());
 
 const saltRounds = 10;
-// env.config();
 
 app.use(
   session({
@@ -43,11 +43,11 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 const db = new pg.Client({
-  user: "postgres",
-  host: "localhost",
-  database: "mediaPlus",
-  password: "postgresmhb",
-  port: 5432,
+  user: process.env.DB_USER,
+  host: process.env.DB_HOST,
+  database: process.env.DATABASE,
+  password: process.env.DB_PASSWORD,
+  port: process.env.DB_PORT,
 });
 db.connect();
 
