@@ -3,3 +3,4 @@ node_modules
 worksheet-facebook.txt
 linkedinworksheet.txt
 .env
+serviceAccountKey.js
