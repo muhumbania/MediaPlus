@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
+import { getFirestore, getDocs } from "firebase/firestore";
 import { collection, addDoc } from "firebase/firestore"; 
 
 // import { getAnalytics } from "firebase/analytics";
@@ -26,6 +26,7 @@ const app = initializeApp(firebaseConfig);
 
 const db = getFirestore(app);  // Replace 'app' with your initialized Firebase app
 
+//Add the data to the database
 try {
   const docRef = await addDoc(collection(db, "users"), {
     first: "Ada",
@@ -37,3 +38,9 @@ try {
   console.error("Error adding document: ", e);
 }
 
+//Get the data from the data base
+const querySnapshot = await getDocs(collection(db, "users"));
+querySnapshot.forEach((doc) => {
+  console.log(`${doc.id} => ${doc.data()}`);
+  console.log(doc.data());
+});
