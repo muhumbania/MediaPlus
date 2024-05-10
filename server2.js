@@ -2,7 +2,14 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore, getDocs } from "firebase/firestore";
 import { collection, addDoc } from "firebase/firestore"; 
+
+//Import the routes functions
 import  authRoutes from './routes/authRoutes.js';
+import indexRoutes from './routes/indexRoutes.js';
+import dashboardRoutes from './routes/dashboardRoutes.js';
+import notificationsRoutes from './routes/notificationsRoutes.js';
+import scheduleRoutes from './routes/scheduleRoutes.js';
+
 import express from "express";
 import bodyParser from "body-parser";
 
@@ -22,9 +29,8 @@ const port = 3000;
 
 server.use(bodyParser.urlencoded({ extended: true }));
 server.set('view engine', 'ejs');
-server.use(express.static("public"));
-server.use('/', authRoutes);
 
+server.use(express.static("public"));
 
 // import { getAnalytics } from "firebase/analytics";
 // TODO: Add SDKs for Firebase products that you want to use
@@ -47,19 +53,25 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 // const analytics = getAnalytics(app);
 
+server.use('/', authRoutes); 
+server.use('/', indexRoutes);
+server.use('/', dashboardRoutes);
+server.use('/', notificationsRoutes);
+server.use('/', scheduleRoutes);
+
 const db = getFirestore(app);  // Replace 'app' with your initialized Firebase app
 
 //Add the data to the database
-try {
-  const docRef = await addDoc(collection(db, "users"), {
-    first: "Ada",
-    last: "Lovelace",
-    born: 1815
-  });
-  console.log("Document written with ID: ", docRef.id);
-} catch (e) {
-  console.error("Error adding document: ", e);
-}
+// try {
+//   const docRef = await addDoc(collection(db, "users"), {
+//     first: "Ada",
+//     last: "Lovelace",
+//     born: 1815
+//   });
+//   console.log("Document written with ID: ", docRef.id);
+// } catch (e) {
+//   console.error("Error adding document: ", e);
+// }
 
 // //Get the data from the data base
 // const querySnapshot = await getDocs(collection(db, "users"));

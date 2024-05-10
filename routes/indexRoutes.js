@@ -1,7 +1,9 @@
 import  express  from "express";
+import { isAuthenticated } from '../middleware/authMiddleware.js'; // Update the path
+
 const router = express.Router();
 
-router.get('/', (req, res)=>{
+router.get('/', isAuthenticated, (req, res)=>{
     if(req.isAuthenticated()){
         res.render("index", {currentPage: 'home', user: req.user});
     }else{
@@ -9,7 +11,7 @@ router.get('/', (req, res)=>{
     }
 });
 
-router.post('/post', (req, res)=>{
+router.post('/post', isAuthenticated, (req, res)=>{
     res.redirect('/');
     console.log(req.body);
 });
