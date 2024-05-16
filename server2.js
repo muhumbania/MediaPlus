@@ -39,18 +39,7 @@ server.use(express.static("public"));
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 
-const firebaseConfig = {
-    apiKey: "AIzaSyBkkdjq_u9XG3veDRgvr-KdQFMpvhr5FbY",
-    authDomain: "umaizi.firebaseapp.com",
-    projectId: "umaizi",
-    storageBucket: "umaizi.appspot.com",
-    messagingSenderId: "746191270515",
-    appId: "1:746191270515:web:688b88d68ec4601a72b006",
-    measurementId: "G-HWV86R455H"
-  };
-
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
 // const analytics = getAnalytics(app);
 
 server.use('/', authRoutes); 
