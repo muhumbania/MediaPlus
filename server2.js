@@ -15,7 +15,7 @@ import bodyParser from "body-parser";
 
 // app.js
 import admin from 'firebase-admin';
-import { serviceAccount } from './serviceAccountKey.js';
+import { serviceAccount } from './public/firebaseCredentials/serviceAccountKey.js';
 
 
 // Initialize Firebase Admin SDK
@@ -48,7 +48,7 @@ server.use('/', dashboardRoutes);
 server.use('/', notificationsRoutes);
 server.use('/', scheduleRoutes);
 
-const db = getFirestore(app);  // Replace 'app' with your initialized Firebase app
+// const db = getFirestore(app);  // Replace 'app' with your initialized Firebase app
 
 //Add the data to the database
 // try {
