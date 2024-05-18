@@ -1,11 +1,11 @@
-import  express  from "express";
+const express = require("express");
 const router = express.Router();
 
-router.get('/schedule', (req, res)=>{
-    res.render('schedule', {currentPage: 'schedule'});
+router.get("/schedule", (req, res)=>{
+    res.render("schedule", {currentPage: "schedule"});
 });
 
-export default router;
+exports.router = router;
 
 
 
