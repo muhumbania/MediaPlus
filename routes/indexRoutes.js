@@ -1,5 +1,6 @@
-const express = require("express");
-const {isAuthenticated} = require("../middleware/authMiddleware.js");
+import express from 'express';
+
+// const {isAuthenticated} = require("../middleware/authMiddleware.js");
 
 
 const router = express.Router();
@@ -21,6 +22,5 @@ router.post("/post", isAuthenticated, (req, res)=>{
     console.log(req.body);
 });
 
-exports.router = router;
-
+export default router;
 

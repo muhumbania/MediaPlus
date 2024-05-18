@@ -1,6 +1,7 @@
-const express = require("express");
-const admin = require("firebase-admin");
-const bodyParser = require("body-parser");
+import express from 'express';
+
+import admin from 'firebase-admin';
+import bodyParser from 'body-parser';
 
 const router = express.Router();
 const app = express();
@@ -50,5 +51,6 @@ router.post("/logout", async (req, res) => {
   }
 });
 
-exports.router = router;
+export default router;
+
 

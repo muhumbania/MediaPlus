@@ -1,10 +1,9 @@
-const express = require("express");
+import express from 'express';
 const router = express.Router();
 
 router.get("/dashboard/facebook", (req, res)=>{
     isAuth("Facebook", req, res);
 });
-
 
 router.get("/dashboard/linkedin", (req, res)=>{
     isAuth("LinkedIn", req, res);
@@ -30,7 +29,7 @@ function isAuth(option, req, res){
     }
 }
 
-exports.router = router;
+export default router;
 
 
 

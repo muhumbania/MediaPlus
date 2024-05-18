@@ -1,4 +1,4 @@
-const express = require("express");
+import express from 'express';
 const router = express.Router();
 
 router.get("/notifications", (req, res)=>{
@@ -36,4 +36,4 @@ router.get("/notifications/x", (req, res)=>{
     });
 });
 
-exports.router = router;
+export default router;
