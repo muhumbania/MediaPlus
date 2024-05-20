@@ -6,14 +6,14 @@
     "ejs": "^3.1.9",
     "express": "^4.18.2"
   },
-  "name": "mediaplus",
+  "name": "umaizi",
   "description": "Social Media Dashboard to bring all social media together in order to save time for community management and gives an overview of each social media",
   "version": "1.0.0",
-  "main": "testApi.js",
+  "main": "server2.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node server2.js"
+    "start": "node server2.js"
   },
   "keywords": [],
   "author": "",
