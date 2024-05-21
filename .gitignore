@@ -7,3 +7,4 @@ serviceAccountKey.js
 firebaseConfig.js
 firebaseCredentials
 .vercel
+facebookAuth.js
