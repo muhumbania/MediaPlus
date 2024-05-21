@@ -2,85 +2,42 @@
  
     <div class="flex sm:h-[92vh] items-start mt-8 sm:mt-0 justify-center sm:items-center text-black text-md">
         <div class="grid sm:grid-cols-2 sm:grid-rows-2 text-slate-500 gap-8 grid-cols-1 grid-rows-4">
-            <%- include('partials/overview.ejs') %>
+            <%- include('partials/overview.ejs', { params: {
+                title: 'Facebook',
+                logo: 'facebook-circle',
+                color: '#4267B2',
+                subscribers: 5,
+                impressions: 3,
+                reactions: 1
+            }}) %>
 
-            <div class="h-60 w-72 flex flex-col justify-start items-center">
-                <div class="basis-1/6 w-72 bg-white rounded-t-xl pl-4 flex justify-start items-center gap-4 border-b-2 pb-1">
-                    <box-icon name='instagram-alt' size="md" type='logo' color="#8a3ab9"></box-icon>
-                    <p>Instagram</p>
-                </div>
-                <div class="basis-5/6 w-72 bg-white rounded-b-xl pl-4 flex flex-col gap-2 justify-center">
-                    <div class="w-72 flex justify-start items-center gap-4">
-                        <box-icon name='facebook-circle' size="md" color="#4b5563" type='logo' ></box-icon>
-                        <p>2m Subscribers</p>
-                    </div>
-                    <div class="w-72 flex justify-start items-center gap-4">
-                        <box-icon name='facebook-circle' size="md" color="#4b5563" type='logo' ></box-icon>
-                        <p>3m Impressions</p>
-                    </div>
-                    <div class="w-72 flex justify-start items-center gap-4">
-                        <box-icon name='facebook-circle' size="md" color="#4b5563" type='logo' ></box-icon>
-                        <p>1m Reactions</p>
-                    </div>
-                    <div class="w-72 flex justify-start items-center gap-4">
-                        <box-icon name='facebook-circle' size="md" color="#4b5563" type='logo' ></box-icon>
-                        <p>100k Average Reactions</p>
-                    </div>
-                    
-                </div>
-            </div>
+            <%- include('partials/overview.ejs', { params: {
+                title: 'Instagram',
+                logo: 'instagram-alt',
+                color: '#8a3ab9',
+                subscribers: 3,
+                impressions: 2,
+                reactions: 1
+            }}) %>
 
-            <div class="h-60 w-72 flex flex-col justify-start items-center">
-                <div class="basis-1/6 w-72 bg-white rounded-t-xl pl-4 flex justify-start items-center gap-4 border-b-2 pb-1">
-                    <box-icon name='linkedin-square' size="md" type='logo' color="#0e76a8" ></box-icon>
-                    <p>LinkedIn</p>
-                </div>
-                <div class="basis-5/6 w-72 bg-white rounded-b-xl pl-4 flex flex-col gap-2 justify-center">
-                    <div class="w-72 flex justify-start items-center gap-4">
-                        <box-icon name='facebook-circle' size="md" color="#4b5563" type='logo' ></box-icon>
-                        <p>2m Subscribers</p>
-                    </div>
-                    <div class="w-72 flex justify-start items-center gap-4">
-                        <box-icon name='facebook-circle' size="md" color="#4b5563" type='logo' ></box-icon>
-                        <p>3m Impressions</p>
-                    </div>
-                    <div class="w-72 flex justify-start items-center gap-4">
-                        <box-icon name='facebook-circle' size="md" color="#4b5563" type='logo' ></box-icon>
-                        <p>1m Reactions</p>
-                    </div>
-                    <div class="w-72 flex justify-start items-center gap-4">
-                        <box-icon name='facebook-circle' size="md" color="#4b5563" type='logo' ></box-icon>
-                        <p>100k Average Reactions</p>
-                    </div>
-                    
-                </div>
-            </div>
+            <%- include('partials/overview.ejs', { params: {
+                title: 'LinkedIn',
+                logo: 'linkedin-square',
+                color: '#0e76a8',
+                subscribers: 6,
+                impressions: 7,
+                reactions: 2
+            }}) %>
 
-            <div class="h-60 w-72 flex flex-col justify-start items-center">
-                <div class="basis-1/6 w-72 bg-white rounded-t-xl pl-4 flex justify-start items-center gap-4 border-b-2 pb-1">
-                    <box-icon name='twitter' size="md" type='logo' color="#1DA1F2"></box-icon>
-                    <p>X</p>
-                </div>
-                <div class="basis-5/6 w-72 bg-white rounded-b-xl pl-4 flex flex-col gap-2 justify-center">
-                    <div class="w-72 flex justify-start items-center gap-4">
-                        <box-icon name='facebook-circle' size="md" color="#4b5563" type='logo' ></box-icon>
-                        <p>2m Subscribers</p>
-                    </div>
-                    <div class="w-72 flex justify-start items-center gap-4">
-                        <box-icon name='facebook-circle' size="md" color="#4b5563" type='logo' ></box-icon>
-                        <p>3m Impressions</p>
-                    </div>
-                    <div class="w-72 flex justify-start items-center gap-4">
-                        <box-icon name='facebook-circle' size="md" color="#4b5563" type='logo' ></box-icon>
-                        <p>1m Reactions</p>
-                    </div>
-                    <div class="w-72 flex justify-start items-center gap-4">
-                        <box-icon name='facebook-circle' size="md" color="#4b5563" type='logo' ></box-icon>
-                        <p>100k Average Reactions</p>
-                    </div>
-                    
-                </div>
-            </div>
+            <%- include('partials/overview.ejs', { params: {
+                title: 'X',
+                logo: 'twitter',
+                color: '#1DA1F2',
+                subscribers: 8,
+                impressions: 5,
+                reactions: 3
+            }}) %>
+
         </div>
     </div>
 

@@ -1,20 +1,20 @@
 <div class="h-60 w-72 flex flex-col justify-start items-center">
     <div class="basis-1/6 py-2 w-72 bg-white rounded-t-xl pl-4 flex justify-start items-center gap-4 border-b-2">
-        <box-icon name='facebook-circle' size="md" type='logo' color="#4267B2" ></box-icon>
-        <p>Facebook</p>
+        <box-icon name='<%= params.logo %>' size="md" type='logo' color="<%= params.color %>" ></box-icon>
+        <p><%= params.title %></p>
     </div>
     <div class="basis-5/6 w-72 bg-white rounded-b-xl pl-4 flex flex-col gap-3 justify-center">
         <div class="w-72 flex justify-start items-center gap-4">
             <box-icon name='group' size="md" color="#4b5563" type='logo' ></box-icon>
-            <p>2m Subscribers</p>
+            <p><%= params.subscribers %>m Subscribers</p>
         </div>
         <div class="w-72 flex justify-start items-center gap-4">
             <box-icon name='line-chart' size="md" color="#4b5563" type='logo' ></box-icon>
-            <p>3m Impressions</p>
+            <p><%= params.impressions %>m Impressions</p>
         </div>
         <div class="w-72 flex justify-start items-center gap-4">
             <box-icon name='like' size="md" color="#4b5563" type='logo' ></box-icon>
-            <p>1m Reactions</p>
+            <p><%= params.reactions %>m Reactions</p>
         </div>
         
     </div>
