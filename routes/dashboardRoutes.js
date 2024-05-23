@@ -2,7 +2,11 @@ import express from 'express';
 const router = express.Router();
 
 router.get("/dashboard/facebook", (req, res)=>{
-    isAuth("Facebook", req, res);
+    res.render("dashboard", {
+        currentPage: "dashboard", 
+        user: req.user,
+        option: "Facebook"
+    });
 });
 
 router.get("/dashboard/linkedin", (req, res)=>{

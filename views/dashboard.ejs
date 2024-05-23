@@ -7,7 +7,7 @@
                 <div class="flex relative items-center">
                     <P class="text-lg"><%= option  %></P>
                     <box-icon name='chevron-down' class="cursor-pointer" id="drop"></box-icon>
-                    <div class="absolute top-8 right-0 bg-white shadow-2xl border-1 border-gray-100 rounded-lg w-36 flex flex-col gap-2 p-1 dropdownDiv">
+                    <div class="absolute top-8 right-0 bg-white shadow-2xl border-1 border-gray-100 rounded-lg w-36 flex flex-col gap-2 p-1 dropdownDiv hidden">
                         <a href="/dashboard/facebook"><p class="hover:bg-gray-200 px-1 <%= option === 'Facebook'? 'bg-gray-200': ''  %> rounded-md cursor-pointer">Facebook</p></a>
                         <a href="/dashboard/linkedin"><p class="hover:bg-gray-200 px-1 <%= option === 'LinkedIn'? 'bg-gray-200': ''  %> rounded-md cursor-pointer">LinkedIn</p></a>
                         <a href="/dashboard/instagram"><p class="hover:bg-gray-200 px-1 <%= option === 'Instagram'? 'bg-gray-200': ''  %> rounded-md cursor-pointer">Instagram</p></a>
@@ -16,11 +16,11 @@
                 </div>
             </div>
             <div class="grid grid-cols-2 min-[900px]:grid-cols-4 grid-rows-2 min-[900px]:grid-rows-1 gap-5 shrink-0">
-                <div class="bg-white rounded-md border-1 shadow-md h-10">1</div>
-                <div class="bg-white rounded-md border-1 shadow-md">2</div>
-                <div class="bg-white rounded-md border-1 shadow-md">3</div>
-                <div class="bg-white rounded-md border-1 shadow-md">4</div>
-            </div>
+                <div class="bg-white rounded-md border-1 shadow-md h-10 flex items-center justify-start pl-2">Followers: 10k</div>
+                <div class="bg-white rounded-md border-1 shadow-md flex items-center justify-start pl-2">Impressions: 100k</div>
+                <div class="bg-white rounded-md border-1 shadow-md flex items-center justify-start pl-2">Reactions: 50k</div>
+                <div class="bg-white rounded-md border-1 shadow-md flex items-center justify-start pl-2">Shares: 5k</div>
+            </div>      
             <div class="grid grid-cols-2 grid-rows-4 min-[900px]:grid-rows-2  gap-5 min-[900px]:grid-cols-4 min-[900px]:w-[900px] w-[400px] min-[900px]:h-[500px] shrink-0">
                 <div class="bg-white rounded-md border-1 shadow-md col-span-2 h-[200px] min-[900px]:h-auto">
                     <canvas id="myChart" width="800" height="400"></canvas>
@@ -35,5 +35,41 @@
         </div>
         
     </div>
-    
-<%- include('partials/footer.ejs')  %>
+    <script type="module">
+        alert("HEllo");
+        import { Chart } from "https://cdn.jsdelivr.net/npm/chart.js";
+
+        // Get the canvas element
+        const ctx = document.getElementById('myChart').getContext('2d');
+
+        
+            
+        // Create a chart
+        const myChart = new Chart(ctx, {
+            type: 'bar', // Specify the type of chart (e.g., bar, line, pie)
+            data: {
+                labels: ['Label 1', 'Label 2', 'Label 3'],
+                datasets: [{
+                    label: 'Content Distribution',
+                    data: [10, 20, 15],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                // Additional options (e.g., scales, tooltips, legends)
+            }
+        });
+    </script>
+    <script src='scripts/main.js'></script>
+</body>
+</html>

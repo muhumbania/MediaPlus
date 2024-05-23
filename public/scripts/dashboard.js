@@ -1,9 +1,13 @@
+import { Chart } from "https://cdn.jsdelivr.net/npm/chart.js";
+
 // Get the canvas element
-var ctx = document.getElementById('myChart').getContext('2d');
+const ctx = document.getElementById('myChart').getContext('2d');
+
+alert("HEllo");
     
 // Create a chart
-var myChart = new Chart(ctx, {
-    type: 'line', // Specify the type of chart (e.g., bar, line, pie)
+const myChart = new Chart(ctx, {
+    type: 'bar', // Specify the type of chart (e.g., bar, line, pie)
     data: {
         labels: ['Label 1', 'Label 2', 'Label 3'],
         datasets: [{
