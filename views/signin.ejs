@@ -37,7 +37,7 @@
         // Function to handle LinkedIn login
         async function loginWithLinkedIn() {
         const { error } = await supabasee.auth.signInWithOAuth({
-            provider: 'linkedin',
+            provider: 'linkedin_oidc',
         });
         if (error) {
             console.error('Error logging in with LinkedIn:', error.message);
