@@ -2,7 +2,8 @@
 <html>
 <head>
     <title>Sign in</title>
-    <link href="./styles/signup.css" type="text/css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </head>
@@ -27,6 +28,26 @@
             </form>
         </div>
     </div>
-    <script src="scripts/facebookAuth.js" type="module"></script>
+
+    <script>
+        const supabaseUrl = 'https://fojxxbnnoynpnpkvwkxj.supabase.co';
+        const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZvanh4Ym5ub3lucG5wa3Z3a3hqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTY3Mzc1OTAsImV4cCI6MjAzMjMxMzU5MH0.YHeH0l0XZqz5EtNUFwtbzSYulEGNoLY77XoKr7Jf2Yw';
+        const supabasee = supabase.createClient(supabaseUrl, supabaseKey);
+
+        // Function to handle LinkedIn login
+        async function loginWithLinkedIn() {
+        const { error } = await supabasee.auth.signInWithOAuth({
+            provider: 'linkedin',
+        });
+        if (error) {
+            console.error('Error logging in with LinkedIn:', error.message);
+        } else {
+            console.log('Redirecting to LinkedIn for authentication');
+        }
+        }
+
+        // Add event listener to login button
+        document.querySelector(".facebook").addEventListener('click', loginWithLinkedIn);
+    </script>
 </body>
 </html>
