@@ -18,9 +18,9 @@
                     <box-icon type='logo' name='google'></box-icon>
                     <p>Sign in with google</p>
                 </div>
-                <div class="flex w-full justify-center gap-4 border border-slate-300 rounded-lg p-1 cursor-pointer facebook">
-                    <box-icon type='logo' name='facebook'></box-icon>
-                    <p>Sign in with facebook</p>
+                <div class="flex w-full justify-center gap-4 border border-slate-300 rounded-lg p-1 cursor-pointer linkedin">
+                    <box-icon type='logo' name='linkedin'></box-icon>
+                    <p>Sign in with LinkedIn</p>
                 </div>
                 <p class="text-red-400 text-sm"></p>
                 <input type="submit" value="Sign in" class="bg-blue-500 text-white text-md font-medium p-1 rounded-md cursor-pointer w-full">
@@ -29,25 +29,7 @@
         </div>
     </div>
 
-    <script>
-        const supabaseUrl = 'https://fojxxbnnoynpnpkvwkxj.supabase.co';
-        const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZvanh4Ym5ub3lucG5wa3Z3a3hqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTY3Mzc1OTAsImV4cCI6MjAzMjMxMzU5MH0.YHeH0l0XZqz5EtNUFwtbzSYulEGNoLY77XoKr7Jf2Yw';
-        const supabasee = supabase.createClient(supabaseUrl, supabaseKey);
-
-        // Function to handle LinkedIn login
-        async function loginWithLinkedIn() {
-        const { error } = await supabasee.auth.signInWithOAuth({
-            provider: 'linkedin_oidc',
-        });
-        if (error) {
-            console.error('Error logging in with LinkedIn:', error.message);
-        } else {
-            console.log('Redirecting to LinkedIn for authentication');
-        }
-        }
-
-        // Add event listener to login button
-        document.querySelector(".facebook").addEventListener('click', loginWithLinkedIn);
-    </script>
+    <script src="supabaseCredentials.js"></script>
+    <script src="scripts/linkedinAuth.js"></script>
 </body>
 </html>
