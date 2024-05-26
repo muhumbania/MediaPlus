@@ -13,4 +13,4 @@ async function loginWithLinkedIn() {
 }
 
 // Add event listener to login button
-document.querySelector(".facebook").addEventListener('click', loginWithLinkedIn);
+document.querySelector(".linkedin").addEventListener('click', loginWithLinkedIn);
